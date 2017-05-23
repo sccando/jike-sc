@@ -1,0 +1,947 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>百度一下，你就知道</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/baidu.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--header start-->
+        <header id="header">
+            <!--tools start-->
+            <div class="tools">
+                <div class="weather">
+                    <span id="city">北京：</span>
+                    <span id="weatherIcon"></span>
+                    <span id="temprature">19℃</span>
+                    <span id="polluteStatus">良</span>
+                    <span id="polluteNum">85</span>
+                    <span class="verticalLine">|</span>
+                </div>
+                <div class="otherTool">
+                    <a href="https://www.baidu.com/index.php?tn=monline_3_dg#">宝箱</a>
+                    <a href="javascript:;" class="change">换肤</a>
+                    <a href="javascript:;">消息</a>
+                </div>
+            </div>
+            <!--tools end-->
+            <!--changeSkin start-->
+            <div class="changeSkin">
+                <!--skinTitle start-->
+                <div class="skinItem">
+                    <span class="sItem">热门</span>
+                    <span class="sItem">游戏</span>
+                    <span class="sItem">卡通</span>
+                    <span class="sItem">女神降临</span>
+                    <span class="sItem">明星</span>
+                    <span class="sItem">风景</span>
+                    <span class="sItem">简约</span>
+                    <span class="sItem">小清新</span>
+                    <span class="sItem vLine">|</span>
+                    <span class="sItem">自定义</span>
+                    <span class="sItem">最近使用</span>
+                    <span class="sFold"><i></i>收起</span>
+                    <span class="skinChosen"><i></i>不使用换肤</span>
+                </div>
+                <!--skinTitle end-->
+                <!--skinPic start-->
+                <div class="skinWrap">
+                    <div class="skins hot">
+                        <div class="skinsBox">
+	                        <div class="skinContainer">
+	                            <div class="page page1">
+	                                <div class="skinPic pic1">
+	                                    <img src="img/skin1.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：魔威映画</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic2">
+	                                    <img src="img/skin11.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：亚洲星光娱乐</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic3">
+	                                    <img src="img/skin12.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：周冬雨工作室</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic4">
+	                                    <img src="img/skin2.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：爱奇艺影业</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic5">
+	                                    <img src="img/skin3.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：爱奇艺影业</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic6">
+	                                    <img src="img/skin4.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：优酷</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic7">
+	                                    <img src="img/skin5.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：基美影业</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic8">
+	                                    <img src="img/skin6.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：基美影业</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic9">
+	                                    <img src="img/skin7.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：环球影业</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic10">
+	                                    <img src="img/skin8.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：环球影业</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic11">
+	                                    <img src="img/skin9.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：派拉蒙影业</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic12">
+	                                    <img src="img/skin10.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：派拉蒙影业</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                            </div>
+	                            <div class="page page2">
+	                                <div class="skinPic pic1">
+	                                    <img src="img/skin13.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：魔威映画</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic2">
+	                                    <img src="img/skin14.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：亚洲星光娱乐</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic3">
+	                                    <img src="img/skin15.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：周冬雨工作室</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic4">
+	                                    <img src="img/skin16.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：爱奇艺影业</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic5">
+	                                    <img src="img/skin17.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：爱奇艺影业</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic6">
+	                                    <img src="img/skin18.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：优酷</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic7">
+	                                    <img src="img/skin19.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：基美影业</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic8">
+	                                    <img src="img/skin20.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：基美影业</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic9">
+	                                    <img src="img/skin21.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：环球影业</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic10">
+	                                    <img src="img/skin22.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：环球影业</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic11">
+	                                    <img src="img/skin23.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：派拉蒙影业</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic12">
+	                                    <img src="img/skin24.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：派拉蒙影业</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                            </div>
+	                            <div class="page page3">
+	                                <div class="skinPic pic1">
+	                                    <img src="img/skin1.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：魔威映画</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic2">
+	                                    <img src="img/skin11.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：亚洲星光娱乐</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic3">
+	                                    <img src="img/skin12.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：周冬雨工作室</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic4">
+	                                    <img src="img/skin2.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：爱奇艺影业</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic5">
+	                                    <img src="img/skin3.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：爱奇艺影业</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic6">
+	                                    <img src="img/skin4.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：优酷</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic7">
+	                                    <img src="img/skin5.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：基美影业</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic8">
+	                                    <img src="img/skin6.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：基美影业</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic9">
+	                                    <img src="img/skin7.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：环球影业</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic10">
+	                                    <img src="img/skin8.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：环球影业</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic11">
+	                                    <img src="img/skin9.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：派拉蒙影业</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic12">
+	                                    <img src="img/skin10.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：派拉蒙影业</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                            </div>
+	                            <div class="page page4">
+	                                <div class="skinPic pic1">
+	                                    <img src="img/skin13.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：魔威映画</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic2">
+	                                    <img src="img/skin14.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：亚洲星光娱乐</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic3">
+	                                    <img src="img/skin15.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：周冬雨工作室</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic4">
+	                                    <img src="img/skin16.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：爱奇艺影业</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic5">
+	                                    <img src="img/skin17.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：爱奇艺影业</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic6">
+	                                    <img src="img/skin18.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：优酷</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic7">
+	                                    <img src="img/skin19.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：基美影业</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic8">
+	                                    <img src="img/skin20.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：基美影业</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic9">
+	                                    <img src="img/skin21.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：环球影业</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic10">
+	                                    <img src="img/skin22.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：环球影业</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic11">
+	                                    <img src="img/skin23.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：派拉蒙影业</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                                <div class="skinPic pic12">
+	                                    <img src="img/skin24.jpg">
+	                                    <i class="imgCover"></i>
+	                                    <p>摄影：派拉蒙影业</p>
+	                                    <span class="chosenIcon"></span>
+	                                </div>
+	                            </div>
+	                        </div>
+                        </div>
+                        <div class="skinPreview">
+                            <div class="skinBg"></div>
+                            <div class="bgPre"></div>
+                        </div>
+                        <!--pageIndex start-->
+                        <div class="pageIndex">
+                            <span class="preIcon"><i></i></span>
+                            <span class="index currentIndex i1"></span>
+                            <span class="index i2"></span>
+                            <span class="index i3"></span>
+                            <span class="index i4"></span>
+                            <span class="nextIcon"><i></i></span>
+                        </div>
+                        <!--pageIndex end-->
+                        <!--skinPreText start-->
+                        <div class="bgPreText">
+                            <p>背景皮肤效果预览</p>
+                        </div>
+                        <!--skinPreText end-->
+                    </div>
+                </div>
+                <!--skinPic end-->
+            </div>
+            <!--changeSkin end-->
+            <!--nav start-->
+            <nav>
+                <a class="menu" href="http://www.nuomi.com/?cid=002540">糯米</a>
+                <a class="menu" href="http://news.baidu.com/">新闻</a>
+                <a class="menu" href="http://www.hao123.com/">hao123</a>
+                <a class="menu" href="http://map.baidu.com/">地图</a>
+                <a class="menu" href="http://v.baidu.com/?fr=bd">视频</a>
+                <a class="menu" href="http://tieba.baidu.com/">贴吧</a>
+                <a href="javascript:;" class="other" id="user">Burning Heart</a>
+                <!--subUser start-->
+                <div class="subUser">
+                    <div class="tri"></div>
+                    <div class="sub user">
+                        <ul>
+                            <li><a href="javascript:;">我的vip</a></li>
+                            <li><a href="javascript:;">个人中心</a></li>
+                            <li><a href="javascript:;">帐号设置</a></li>
+                            <li><a href="javascript:;">意见反馈</a></li>
+                            <li><a href="javascript:;">退出</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--subUser end-->
+                <a href="javascript:;" class="other" id="setting">设置</a>
+                <!--subSetting start-->
+                <div class="subSet">
+                    <div class="tri"></div>
+                    <div class="sub set">
+                        <ul>
+                            <li><a href="javascript:;">搜索设置</a></li>
+                            <li><a href="https://www.baidu.com/gaoji/advanced.html">高级设置</a></li>
+                            <li><a href="javascript:;">关闭预测</a></li>
+                            <li><a href="javascript:;">搜索历史</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--subSetting end-->
+                <a href="javascript:;" class="more">更多产品</a>
+                <!--subMore start-->
+                <div class="fold">
+                    <div class="moreCon">更多产品</div>
+                    <div class="moreIcon">
+                        <a href="http://music.baidu.com/">
+                            <span class="music"></span> 音乐
+                        </a>
+                        <a href="http://image.baidu.com/">
+                            <span class="imgs"></span> 图片
+                        </a>
+                        <a href="http://zhidao.baidu.com/">
+                            <span class="zhidao"></span> 知道
+                        </a>
+                        <a href="http://wenku.baidu.com/">
+                            <span class="wenku"></span> 文库
+                        </a>
+                        <a href="http://top.baidu.com/">
+                            <span class="fengyunbang"></span> 风云榜
+                        </a>
+                        <a href="https://www.baidu.com/more/" id="all">全部产品&gt;&gt;</a>
+                    </div>
+                </div>
+                <!--subMore end-->
+            </nav>
+            <!--nav end-->
+        </header>
+        <!--header end-->
+        <!--search start-->
+        <div class="searchPart">
+            <!--logo start-->
+            <img src="img/bd_logo1.png" alt="百度logo" class="logo">
+            <!--logo end-->
+            <!--search-part start-->
+            <div class="search">
+                <form action="http://www.baidu.com/s" method="get" target="_blank">
+                    <input type="text" name="kw">
+                    <span class="cameraIcon"></span>
+                    <button type="submit">百度一下</button>
+                </form>
+            </div>
+            <!--search-part end-->
+            <!--click-camera start-->
+            <div class="subPic">
+                <div class="sotu">
+                    <input type="text" name="urlPic" placeholder="在此处粘贴图片网址">
+                    <span class="sotuIcon"></span>
+                </div>
+                <div class="tietu">
+                    <div class="drag">
+                        <span class="textDrag">拖拽图片到这里</span>
+                        <span class="plusIcon"></span>
+                    </div>
+                    <div class="upload">
+                        <input type="file">
+                        <span class="upIcon"></span>
+                        <span class="textUp">本地上传图片</span>
+                    </div>
+                </div>
+                <span class="close"></span>
+            </div>
+            <!--click-camera end-->
+        </div>
+        <!--search end-->
+
+        <!--scroll-search start-->
+        <div class="scrollSearch">
+        	<div class="topWrap">
+        		<a href="http://www.baidu.com"><img src="img/logo_top.png"></a>
+        		<form action="http://www.baidu.com/s" method="get" target="_blank">
+                    <input type="text" name="kw">
+                    <span class="cameraIcon"></span>
+                    <button type="submit">百度一下</button>
+                </form>
+                <div class="subPic">
+	                <div class="sotu">
+	                    <input type="text" name="urlPic" placeholder="在此处粘贴图片网址">
+	                    <span class="sotuIcon"></span>
+	                </div>
+	                <div class="tietu">
+	                    <div class="drag">
+	                        <span class="textDrag">拖拽图片到这里</span>
+	                        <span class="plusIcon"></span>
+	                    </div>
+	                    <div class="upload">
+	                        <input type="file">
+	                        <span class="upIcon"></span>
+	                        <span class="textUp">本地上传图片</span>
+	                    </div>
+	                </div>
+	                <span class="close"></span>
+	            </div>
+        	</div>
+        </div>
+        <!--scroll-search end-->
+
+       	<!--back-scroll-title  start-->
+	    <div class="backScrollWrap">   	
+	       	<div class="backScrollTitle">
+	       		<ul>
+	       			<li class="currentChosen backTitle1"><a href="#header"><i class="currentI"></i>我的关注</a></li>
+	       			<li class="backTitle2"><a href="#header">推荐</a></li>
+	       			<li class="backTitle3"><a href="#header">导航</a></li>
+	       	<!--    <li class="backTitle4"><a href="#header">视频</a></li>
+	       			<li class="backTitle5"><a href="#header">购物</a></li>
+	        -->
+	       		</ul>
+	       		<span class="settingIcon" title="设置"></span>
+	       	</div>
+	    </div>
+       	<!--back-scroll-title  end-->
+
+        <!--article start-->
+        <article>
+            <div class="articleWarp">
+            	<div class="articleTitle">
+            		<ul>
+            			<li class="currentChosen firstLi"><i class="currentI"></i>我的关注</li>
+            			<li class="secondLi">推荐</li>
+            			<li class="thirdLi">导航</li>
+            	<!--	<li class="forthLi">视频</li>
+            			<li class="fifthLi">购物</li>
+				-->
+            		</ul>
+            		<span class="settingIcon" title="设置"></span>
+            	</div>
+
+            	<div class="mainContainer">
+	            	<div class="articleMain myFocus">
+		            	<div class="myNavWrapper">	
+		            		<div class="myNav">
+		            			<i></i>
+		            			<b>我的导航</b>
+		            			<span>(<span class="num">0</span>)</span>
+		            		</div>
+		            		<div class="setBar">
+		            			<span class="setAdd">添加</span>
+		            			<div class="setFanli">
+		            				<span class="fanliIcon"></span>
+		            				<span class="fanliText">返利模式</span>
+		            			</div>
+		            			<span class="zhiding">置顶</span>
+		            		</div>
+		            		<div class="navBlank">
+		            			<div class="navBlankImg"></div>
+		            			<div class="navAdd"></div>
+		            		</div>
+		            	</div>
+	            		<div class="diy">
+	            			<span><i></i>自定义</span>
+	            		</div>
+	            	</div>
+	            	<div class="articleMain recommend">
+		            	<div class="wrap">	
+		            		<div class="recommendBox">
+			            		<div class="interestRecommend">
+			            			<span class="line leftLine"></span>
+			            			<span class="tips"><i></i>以下信息根据您的兴趣推荐</span>
+			            			<span class="line rightLine"></span>
+			            			<div class="recommendNews firstNews">
+			            				<h2><a href="javascript:;">韩检方延长对朴槿惠逮捕期限 决定转移崔顺实</a></h2>
+			            				<div class="newsFrom">
+				            				<a href="http://news.sohu.com/" class="newspaper">搜狐新闻</a>
+				            				<span>04-05</span>
+				            				<span>18:42</span>
+				            				<span class="hotPoint">热点</span>
+				            			</div>
+			            			</div>
+			            			<div class="recommendNews onePicNews">
+			            				<a class="onePic" href="http://finance.ifeng.com/a/20170405/15285583_0.shtml"><img src="img/news1.jpg"></a>
+			            				<div class="onePicTitle">
+				            				<h2><a href="javascript:;">美国3月ADP数据大幅好于预期 美元直升黄金下挫</a></h2>
+				            				<div class="newsFrom">
+					            				<a href="http://finance.ifeng.com/" class="newspaper">凤凰财经</a>
+					            				<span>04-05</span>
+					            				<span>20:28</span>
+					            				<span class="hotPoint">热点</span>
+					            			</div>
+					            		</div>
+			            			</div>
+			            			<div class="recommendNews">
+			            				<h2><a href="javascript:;">张高丽将赴俄罗斯等五国举行会议会晤并访问</a></h2>
+			            				<div class="newsFrom">
+				            				<a href="http://politics.people.com.cn/" class="newspaper">人民网</a>
+				            				<span>04-05</span>
+				            				<span>20:14</span>
+				            				<span class="hotPoint">热点</span>
+				            			</div>
+			            			</div>
+			            			<div class="recommendNews morePicsNews">
+			            				<h2><a href="javascript:;">缅甸总统廷觉抵川 开启首次访华之旅</a></h2>
+			            				<a href="http://politics.people.com.cn/n1/2017/0407/c1001-29194132.html" class="morePics"><img src="img/news2.jpg"><img src="img/news3.jpg"><img src="img/news4.jpg"></a>
+			            				<div class="newsFrom">
+				            				<a href="http://politics.people.com.cn/" class="newspaper">人民网</a>
+				            				<span>04-07</span>
+				            				<span>08:07</span>
+				            				<span class="hotPoint">热点</span>
+				            			</div>
+			            			</div>
+			            			<div class="recommendNews firstNews">
+			            				<h2><a href="javascript:;">韩检方延长对朴槿惠逮捕期限 决定转移崔顺实</a></h2>
+			            				<div class="newsFrom">
+				            				<a href="http://news.sohu.com/" class="newspaper">搜狐新闻</a>
+				            				<span>04-05</span>
+				            				<span>18:42</span>
+				            				<span class="hotPoint">热点</span>
+				            			</div>
+			            			</div>
+			            			<div class="recommendNews onePicNews">
+			            				<a class="onePic" href="http://finance.ifeng.com/a/20170405/15285583_0.shtml"><img src="img/news1.jpg"></a>
+			            				<div class="onePicTitle">
+				            				<h2><a href="javascript:;">美国3月ADP数据大幅好于预期 美元直升黄金下挫</a></h2>
+				            				<div class="newsFrom">
+					            				<a href="http://finance.ifeng.com/" class="newspaper">凤凰财经</a>
+					            				<span>04-05</span>
+					            				<span>20:28</span>
+					            				<span class="hotPoint">热点</span>
+					            			</div>
+					            		</div>
+			            			</div>
+			            			<div class="recommendNews">
+			            				<h2><a href="javascript:;">张高丽将赴俄罗斯等五国举行会议会晤并访问</a></h2>
+			            				<div class="newsFrom">
+				            				<a href="http://politics.people.com.cn/" class="newspaper">人民网</a>
+				            				<span>04-05</span>
+				            				<span>20:14</span>
+				            				<span class="hotPoint">热点</span>
+				            			</div>
+			            			</div>
+			            			<div class="recommendNews morePicsNews">
+			            				<h2><a href="javascript:;">缅甸总统廷觉抵川 开启首次访华之旅</a></h2>
+			            				<a href="http://politics.people.com.cn/n1/2017/0407/c1001-29194132.html" class="morePics"><img src="img/news2.jpg"><img src="img/news3.jpg"><img src="img/news4.jpg"></a>
+			            				<div class="newsFrom">
+				            				<a href="http://politics.people.com.cn/" class="newspaper">人民网</a>
+				            				<span>04-07</span>
+				            				<span>08:07</span>
+				            				<span class="hotPoint">热点</span>
+				            			</div>
+			            			</div>
+			            		</div>
+			            		<div class="hotNews">
+			            			<div class="hotChange">
+			            				<a href="http://top.baidu.com/?fr=mhd_card">实时热点</a>
+			            				<span><i></i>换一换</span>
+			            			</div>
+			            			<div class="hotTitle">
+			            				<ul>
+			            					<li><a href="javascript:;">日本现女仆健身房</a></li>
+			            					<li><a href="javascript:;">河南伪基站犯罪案</a></li>
+			            					<li><a href="javascript:;">日本遗孤探望中国</a></li>
+			            					<li><a href="javascript:;">拿LV装鱼赞防水</a></li>
+			            					<li><a href="javascript:;">莆田发生持刀伤人</a></li>
+			            					<li><a href="javascript:;">美女模特大火毁容</a></li>
+			            					<li><a href="javascript:;">四川校园暴力事件</a></li>
+			            					<li><a href="javascript:;">男孩托举被卡女童</a></li>
+			            					<li><a href="javascript:;">网购手表谎称被骗</a></li>
+			            					<li><a href="javascript:;">gd消瘦近照曝光</a></li>
+			            					<li><a href="javascript:;">迪拜新地标完工</a></li>
+			            					<li><a href="javascript:;">姚晨职业拳手特训</a></li>
+			            					<li><a href="javascript:;">网友迪拜偶遇王菲</a></li>
+			            					<li><a href="javascript:;">中企抄韩广告</a></li>
+			            					<li><a href="javascript:;">上坟后思夫欲自杀</a></li>
+			            					<li><a href="javascript:;">特朗普安倍通电话</a></li>
+			            				</ul>
+			            			</div>
+			            		</div>
+			            	</div>
+			            </div>
+	            	</div>
+	            	<div class="articleMain nav">
+	            		<div class="navBox">
+		            		<div class="navTitle guessYouLike">
+		            			<h3>猜你喜欢</h3>
+		            			<a href="javascript:;" class="navBlock nuomi">
+		            				<span><i></i>百度糯米</span>
+		            			</a>
+								<a href="javascript:;" class="navBlock jd">
+		            				<span><i></i>京东商城</span>
+		            			</a>
+		            			<a href="javascript:;" class="navBlock hao1">
+		            				<span><i></i>1号店</span>
+		            			</a>
+		            			<a href="javascript:;" class="navBlock suning">
+		            				<span><i></i>苏宁易购</span>
+		            			</a>
+		            			<a href="javascript:;" class="navBlock vip">
+		            				<span><i></i>唯品会</span>
+		            			</a>
+		            			<a href="javascript:;" class="navBlock dangdang">
+		            				<span><i></i>当当网</span>
+		            			</a>
+		            			<a href="javascript:;" class="navBlock tencent">
+		            				<span><i></i>腾讯</span>
+		            			</a>
+		            			<a href="javascript:;" class="navBlock iqy">
+		            				<span><i></i>爱奇艺</span>
+		            			</a>
+		            		</div>
+		            		<div class="navTitle zixun">
+		            			<h3>资讯信息</h3>
+		            			<a href="javascript:;" class="navBlock qq">
+		            				<img src="img/qq.png">
+		            			</a>
+		            			<a href="javascript:;" class="navBlock sina">
+		            				<img src="img/sina.png">
+		            			</a>
+		            			<a href="javascript:;" class="navBlock weibo">
+		            				<img src="img/weibo.png">
+		            			</a>
+		            			<a href="javascript:;" class="navBlock sohu">
+		            				<img src="img/sohu.png">
+		            			</a>
+		            			<a href="javascript:;" class="navBlock net">
+		            				<img src="img/net.png">
+		            			</a>
+		            			<a href="javascript:;" class="navBlock guangming">
+		            				<img src="img/guangming.png">
+		            			</a>
+		            			<a href="javascript:;" class="navBlock cctv">
+		            				<img src="img/cctv.png">
+		            			</a>
+		            			<a href="javascript:;" class="navBlock people">
+		            				<img src="img/people.png">
+		            			</a>
+		            			<a href="javascript:;" class="navBlock ifeng">
+		            				<img src="img/ifeng.png">
+		            			</a>
+		            			<a href="javascript:;" class="navBlock qq">
+		            				<img src="img/qq.png">
+		            			</a>
+		            			<a href="javascript:;" class="navBlock sina">
+		            				<img src="img/sina.png">
+		            			</a>
+		            			<a href="javascript:;" class="navBlock weibo">
+		            				<img src="img/weibo.png">
+		            			</a>
+		            			<a href="javascript:;" class="navBlock sohu">
+		            				<img src="img/sohu.png">
+		            			</a>
+		            			<a href="javascript:;" class="navBlock net">
+		            				<img src="img/net.png">
+		            			</a>
+		            			<a href="javascript:;" class="navBlock guangming">
+		            				<img src="img/guangming.png">
+		            			</a>
+		            			<a href="javascript:;" class="navBlock cctv">
+		            				<img src="img/cctv.png">
+		            			</a>
+		            			<a href="javascript:;" class="navBlock people">
+		            				<img src="img/people.png">
+		            			</a>
+		            			<a href="javascript:;" class="navBlock ifeng">
+		            				<img src="img/ifeng.png">
+		            			</a>
+		            		</div>
+		            		<div class="navTitle zixun">
+		            			<h3>娱乐休闲</h3>
+		            			<a href="javascript:;" class="navBlock qq">
+		            				<img src="img/qq.png">
+		            			</a>
+		            			<a href="javascript:;" class="navBlock sina">
+		            				<img src="img/sina.png">
+		            			</a>
+		            			<a href="javascript:;" class="navBlock weibo">
+		            				<img src="img/weibo.png">
+		            			</a>
+		            			<a href="javascript:;" class="navBlock sohu">
+		            				<img src="img/sohu.png">
+		            			</a>
+		            			<a href="javascript:;" class="navBlock net">
+		            				<img src="img/net.png">
+		            			</a>
+		            			<a href="javascript:;" class="navBlock guangming">
+		            				<img src="img/guangming.png">
+		            			</a>
+		            			<a href="javascript:;" class="navBlock cctv">
+		            				<img src="img/cctv.png">
+		            			</a>
+		            			<a href="javascript:;" class="navBlock people">
+		            				<img src="img/people.png">
+		            			</a>
+		            			<a href="javascript:;" class="navBlock ifeng">
+		            				<img src="img/ifeng.png">
+		            			</a>
+		            			<a href="javascript:;" class="navBlock qq">
+		            				<img src="img/qq.png">
+		            			</a>
+		            			<a href="javascript:;" class="navBlock sina">
+		            				<img src="img/sina.png">
+		            			</a>
+		            			<a href="javascript:;" class="navBlock weibo">
+		            				<img src="img/weibo.png">
+		            			</a>
+		            			<a href="javascript:;" class="navBlock sohu">
+		            				<img src="img/sohu.png">
+		            			</a>
+		            			<a href="javascript:;" class="navBlock net">
+		            				<img src="img/net.png">
+		            			</a>
+		            			<a href="javascript:;" class="navBlock guangming">
+		            				<img src="img/guangming.png">
+		            			</a>
+		            			<a href="javascript:;" class="navBlock cctv">
+		            				<img src="img/cctv.png">
+		            			</a>
+		            			<a href="javascript:;" class="navBlock people">
+		            				<img src="img/people.png">
+		            			</a>
+		            			<a href="javascript:;" class="navBlock ifeng">
+		            				<img src="img/ifeng.png">
+		            			</a>
+		            		</div>
+	            		</div>
+	            	</div>
+	            	<div class="articleMain video">
+	            		<div class="interestRecommend">
+	            			<span class="leftLine"></span>
+	            			<span class="tips"><i></i>以下信息根据您的兴趣推荐</span>
+	            			<span class="rightLine"></span>
+	            			<div class="recommendNews">
+	            				<h2>韩检方延长对朴槿惠逮捕期限 决定转移崔顺实</h2>
+	            				<div class="newsFrom">
+		            				<a href="http://news.sohu.com/" class="newspaper">搜狐新闻</a>
+		            				<span>04-05</span>
+		            				<span>18:42</span>
+		            				<span class="hotPoint">热点</span>
+		            			</div>
+	            			</div>
+	            			<div class="recommendNews">
+	            				<a href="http://finance.ifeng.com/a/20170405/15285583_0.shtml"><img src="img/news1.jpg"></a>
+	            				<h2>美国3月ADP数据大幅好于预期 美元直升黄金下挫</h2>
+	            				<div class="newsFrom">
+		            				<a href="http://finance.ifeng.com/" class="newspaper">凤凰财经</a>
+		            				<span>04-05</span>
+		            				<span>20:28</span>
+		            				<span class="hotPoint">热点</span>
+		            			</div>
+	            			</div>
+	            			<div class="recommendNews">
+	            				<h2>张高丽将赴俄罗斯等五国举行会议会晤并访问</h2>
+	            				<div class="newsFrom">
+		            				<a href="http://politics.people.com.cn/" class="newspaper">人民网</a>
+		            				<span>04-05</span>
+		            				<span>20:14</span>
+		            				<span class="hotPoint">热点</span>
+		            			</div>
+	            			</div>
+	            			<div class="recommendNews">
+	            				<h2>缅甸总统廷觉抵川 开启首次访华之旅</h2>
+	            				<a href="http://politics.people.com.cn/n1/2017/0407/c1001-29194132.html"><img src="img/news2.jpg"><img src="img/news3.jpg"><img src="img/news4.jpg"></a>
+	            				<div class="newsFrom">
+		            				<a href="http://politics.people.com.cn/" class="newspaper">人民网</a>
+		            				<span>04-07</span>
+		            				<span>08:07</span>
+		            				<span class="hotPoint">热点</span>
+		            			</div>
+	            			</div>
+	            		</div>
+	            		<div class="hotNews">
+	            			<div class="hotChange">
+	            				<b>实时热点</b>
+	            				<span><i></i>换一换</span>
+	            			</div>
+	            			<div class="hotTitle">
+	            				<ul>
+	            					<li><a href="javascript:;">日本现女仆健身房</a></li>
+	            					<li><a href="javascript:;">河南伪基站犯罪案</a></li>
+	            					<li><a href="javascript:;">日本遗孤探望中国</a></li>
+	            					<li><a href="javascript:;">拿LV装鱼赞防水</a></li>
+	            					<li><a href="javascript:;">莆田发生持刀伤人</a></li>
+	            					<li><a href="javascript:;">美女模特大火毁容</a></li>
+	            					<li><a href="javascript:;">四川校园暴力事件</a></li>
+	            					<li><a href="javascript:;">男孩托举被卡女童</a></li>
+	            					<li><a href="javascript:;">网购手表谎称被骗</a></li>
+	            					<li><a href="javascript:;">gd消瘦近照曝光</a></li>
+	            					<li><a href="javascript:;">迪拜新地标完工</a></li>
+	            					<li><a href="javascript:;">姚晨职业拳手特训</a></li>
+	            					<li><a href="javascript:;">网友迪拜偶遇王菲</a></li>
+	            					<li><a href="javascript:;">中企抄韩广告</a></li>
+	            					<li><a href="javascript:;">上坟后思夫欲自杀</a></li>
+	            					<li><a href="javascript:;">特朗普安倍通电话</a></li>
+	            				</ul>
+	            			</div>
+	            		</div>
+	            	</div>
+	            	<div class="articleMain shopping">
+	            		<div class="myNav">
+	            			<i></i>
+	            			<b>我的导航</b>
+	            			<span>(<span class="num">0</span>)</span>
+	            		</div>
+	            		<div class="diy">
+	            			<span><i></i>自定义</span>
+	            		</div>
+	            	</div>
+	            </div>
+            </div>	
+        </article>
+        <!--article end-->
+        <!--footer start-->
+        <footer>
+            <p>
+                <a href="https://www.baidu.com/cache/sethelp/help.html" class="indexPage">设为主页</a>
+                <span>&copy;2017&nbsp; Baidu&nbsp;</span>
+                <a href="http://www.baidu.com/duty/">使用百度前必读</a>
+                <a href="http://jianyi.baidu.com/">意见反馈</a>
+                <span>京ICP证030173号</span>
+                <img src="img/icrlogo.png">
+            </p>
+            <p>
+                <img src="img/jgwab.png">
+                <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001">京公网安备11000002000001号</a>
+            </p>
+        </footer>
+        <!--footer end-->
+
+        <!--backTop start-->
+        <a href="#header">
+        	<div class="backTop">
+	        	<span class="backIcon"></span>
+	        	<p class="backText">回到顶部</p>
+        	</div>
+        </a>
+        <!--backTop end-->
+
+    </div>
+    
+    <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="js/baidu.js"></script>
+</body>
+
+</html>
