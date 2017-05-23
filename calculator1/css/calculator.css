@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.content {
+    width: 600px;
+    height: 500px;
+    background-color: #e7e7e7;
+    border: solid 1px #ddd;
+    border-radius: 4px;
+    box-shadow: 4px 4px 6px #aaa;
+    margin: 50px auto;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+
+/*显示屏 开始*/
+input {
+    width: 560px;
+    height: 80px;
+    box-sizing: border-box;
+    border: 1px solid #666;
+    border-radius: 4px;
+    box-shadow: inset 2px 2px 4px #999;
+    background-color: #fcfdea;
+    color: #333;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 20px;
+    padding-right: 10px;
+    /*padding-top: 15px\0;*/
+}
+/*显示屏 结束*/
+
+.calculate {
+    width: 100%;
+    height: 368px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+/*键码 开始*/
+span {
+    display: inline-block;
+    width: 90px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+    border: 1px solid #666;
+    border-radius: 4px;
+    float: left;
+    margin-bottom: 12px;
+    margin-right: 19px;
+    box-shadow: 1px 1px 2px #999;
+    position: relative;
+    background: -webkit-linear-gradient(#efefef, #c1c1c1);
+    background: -o-linear-gradient(#efefef, #c1c1c1);
+    background: -moz-linear-gradient(#efefef, #c1c1c1);
+    background: linear-gradient(#efefef, #c1c1c1);
+    background: #c1c1c1\0;
+}
+
+/*键码高亮 开始*/
+span i {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/*键码高亮 结束*/
+
+span.del {
+    background: -webkit-linear-gradient(#ec8b4f, #c15838);
+    background: -o-linear-gradient(#ec8b4f, #c15838);
+    background: -moz-linear-gradient(#ec8b4f, #c15838);
+    background: linear-gradient(#ec8b4f, #c15838);
+    background: #c15838\0;
+    color: #eee;
+    font-size: 24px;
+}
+
+span.del b {
+    display: block;
+    width: 50px;
+    height: 30px;
+    margin: 15px 20px;
+    border-radius: 4px;
+    background: url(../img/back.png) no-repeat center;
+}
+
+span.zero {
+    width: 200px;
+}
+
+span.bg-black {
+    color: #eee;
+    font-size: 26px;
+    font-weight: normal;
+    background: -webkit-linear-gradient(#4d4d4d, #303030);
+    background: -o-linear-gradient(#4d4d4d, #303030);
+    background: -moz-linear-gradient(#4d4d4d, #303030);
+    background: linear-gradient(#4d4d4d, #303030);
+    background: #303030\0;
+    margin-right: 0;
+}
+
+span.p-m {
+    margin-right: 19px;
+}
+
+span.equ {
+    height: 134px;
+    line-height: 134px;
+    position: absolute;
+    right: 14px;
+    bottom: 0;
+}
+
+span.operator {
+    color: #5a5a5a;
+    text-shadow: 0 1px 0 #eee;
+    background: -webkit-linear-gradient(#979b9f, #788388);
+    background: -o-linear-gradient(#979b9f, #788388);
+    background: -moz-linear-gradient(#979b9f, #788388);
+    background: linear-gradient(#979b9f, #788388);
+    background: #788388\0;
+}
+/*键码 结束*/
