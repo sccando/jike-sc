@@ -1,0 +1,42 @@
+.container{
+	width: 304px;
+	height: 310px;
+	box-shadow: none;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -155px;
+	margin-top: -155px;
+}
+.container div{
+	width: 100px;
+	height: 100px;
+	box-shadow: 2px 2px 4px #999;
+}
+#top{
+	background-color: #900;
+	margin: 0 auto;
+	margin-bottom: 2px;
+}
+.row2{
+	float: left;
+}
+.left{
+	background-color: #090;
+	margin-right: 2px;
+}
+.center{
+	background: rgba(0,0,0,0.1) url(../img/Super_Mario.png) no-repeat center;
+}
+.right{
+	background-color: #009;
+	margin-left: 2px;
+}
+#bottom{
+	clear: both;
+	background-color: #335f87;
+	margin: 0 auto;
+	position: relative;
+	top: 2px;
+	z-index: 2;
+}
