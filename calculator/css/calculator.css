@@ -1,0 +1,53 @@
+.content {
+    margin-top: 100px;
+    width: 400px;
+    height: 240px;
+    box-shadow: 0 0 20px #ccc;
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    box-sizing: border-box;
+    padding: 20px;
+    position: relative;
+}
+
+input {
+    box-sizing: border-box;
+    width: 60px;
+    padding-left: 4px;
+}
+
+#operator {
+    width: 60px;
+}
+
+button {
+    position: absolute;
+    left: 50%;
+    margin-left: -51px;
+    bottom: 40px;
+}
+
+/*输出内容*/
+#text {
+    text-align: center;
+    visibility: hidden;
+}
+
+#text span {
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+    color: #06a;
+}
+
+/*输入内容有误，弹出提示信息*/
+#tips {
+    color: #f00;
+    position: relative;
+    top: -55px;
+    left: 140px;
+    font-size: 14px;
+    font-weight: bold;
+    visibility: hidden;
+}
