@@ -1,0 +1,53 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-size: 13px;
+	color: #333;
+	background: #eee;
+}
+.wrapper{
+	width: 60%;
+	margin: 20px auto;
+	padding: 20px 60px;
+	box-sizing: border-box;
+	box-shadow: 0 2px 8px #aaa;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	background-color: #fff;
+	position: relative;
+}
+h1{
+	text-align: center;
+	margin-bottom: 20px;
+}
+img{
+	width: 100px;
+}
+img#h5{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+img#css3{
+	position: absolute;
+	top: 20px;
+	right: 120px;
+}
+.para{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.para .q{
+	font-size: 14px;
+	background: #aaa;
+	color: #fff;
+	padding: 6px;
+	display: inline-block;
+	margin-bottom: 16px;
+}
+.para .a{
+	line-height: 1.5em;
+	text-indent: 2em;
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>初级前端面试题</title>
+	<link rel="stylesheet" type="text/css" href="web-interview.css">
+</head>
+<body>
+	<div class="wrapper">
+		<h1>HTML5、CSS3常见的面试问题</h1>
+		<img src="img/H5.jpg" id="h5">
+		<img src="img/CSS3.jpg" id="css3">
+		<div class="para">
+			<strong class="q">1、如何区分 HTML 和 HTML5？</strong>
+			<p class="a">1）在文档类型声明上不同：</p>
+			<p class="a">HTML是很长的一段代码，很难记住，而HTML5却只有简简单单的声明，方便记忆。</p>
+			<p class="a">2）在结构语义上不同：</p>
+			<p class="a">HTML：没有体现结构语义化的标签，通常都是这样来命名的&lt;div id="header"&gt;&lt;/div&gt，这样表示网站的头部。</p>
+			<p class="a">HTML5：在语义上却有很大的优势。提供了一些新的标签，比如：&lt;header&gt;&lt;article&gt;&lt;footer&gt;。</p>
+		</div>
+
+		<div class="para">
+			<strong class="q">2、简述一下你对HTML语义化的理解？</strong>
+			<p class="a">1）用正确的标签做正确的事情；</p>
+			<p class="a">2）html语义化让页面的内容结构化，结构更清晰，便于对浏览器、搜索引擎解析；</p>
+			<p class="a">3）即使在没有样式css情况下也以一种文档格式显示，并且是容易阅读的；</p>
+			<p class="a">4）搜索引擎的爬虫也依赖于HTML标记来确定上下文和各个关键字的权重，利于SEO；</p>
+			<p class="a">5）使编写源代码的人对网站更容易将网站分块，便于阅读维护理解。</p>
+		</div>
+
+		<div class="para">
+			<strong class="q">3、Doctype作用? 严格模式与混杂模式如何区分？它们有何意义?</strong>
+			<p class="a">1）&lt;!Doctype&gt;声明位于文档中的最前面，处于&lt;html&gt;标签之前。告知浏览器的解析器，用什么文档类型规范来解析这个文档。</p>
+			<p class="a">2）严格模式的排版和JS运作模式是以该浏览器支持的最高标准运行。</p>
+			<p class="a">3）在混杂模式中，页面以宽松的向后兼容的方式显示。模拟老式浏览器的行为以防止站点无法工作。</p>
+			<p class="a">4）DOCTYPE不存在或格式不正确会导致文档以混杂模式呈现。</p>
+		</div>
+
+		<div class="para">
+			<strong class="q">4、浏览器的内核分别是什么?</strong>
+			<p class="a">IE: trident内核</p>
+			<p class="a">Firefox：gecko内核</p>
+			<p class="a">Safari：webkit内核</p>
+			<p class="a">Opera：以前是presto内核，Opera现已改用Google Chrome的Blink内核</p>
+			<p class="a">Chrome：Blink(基于webkit，Google与Opera Software共同开发)</p>
+		</div>
+
+		<div class="para">
+			<strong class="q">5、行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？</strong>
+			<p class="a">行内元素：a  b  span  img  input  select  strong</p>
+			<p class="a">块级元素：div  ul  ol  li  dl  dt  dd  h1  h2  h3  h4  p  等</p>
+			<p class="a">空元素：&lt;br&gt;  &lt;hr&gt;  &lt;img&gt;  &lt;link&gt; &lt;meta&gt;</p>
+		</div>
+
+		<div class="para">
+			<strong class="q">6、html5有哪些新特性、移除了那些元素？如何处理HTML5新标签的浏览器兼容问题？</strong>
+			<p class="a">新特性，新增元素：</p>
+			<p class="a">1）内容元素：article、footer、header、nav、section</p>
+			<p class="a">2）表单控件：calendar、date、time、email、url、search</p>
+			<p class="a">3）控件元素：webworker，websockt，Geolocation</p>
+			<p class="a">移除元素：</p>
+			<p class="a">1）显现层元素：basefont，big，center，font，s，strike，tt，u</p>
+			<p class="a">2）性能较差元素：frame，frameset，noframes</p>
+			<p class="a">处理兼容问题有两种方式：</p>
+			<p class="a">1）IE6/IE7/IE8支持通过document方法产生的标签，利用这一特性让这些浏览器支持HTML5新标签。</p>
+			<p class="a">2）使用是html5shim框架</p>
+			<p class="a">另外，DOCTYPE声明的方式是区分HTML和HTML5标志的一个重要因素，此外，还可以根据新增的结构，功能元素来加以区分。</p>
+		</div>
+
+		<div class="para">
+			<strong class="q">7、什么是盒子模型？</strong>
+			<p class="a">在网页中，一个元素占有空间的大小由几个部分构成，其中包括元素的内容（content），元素的内边距（padding），元素的边框（border），元素的外边距（margin）四个部分。这四个部分占有的空间中，有的部分可以显示相应的内容，而有的部分只用来分隔相邻的区域或区域。4个部分一起构成了css中元素的盒模型。</p>
+		</div>
+
+		<div class="para">
+			<strong class="q">8、你知道多少种Doctype文档类型？</strong>
+			<p class="a">该标签可声明三种 DTD 类型，分别表示严格版本、过渡版本以及基于框架的 HTML 文档。 HTML 4.01 规定了三种文档类型：Strict、Transitional 以及 Frameset。 XHTML 1.0 规定了三种 XML 文档类型：Strict、Transitional 以及 Frameset。 Standards （标准）模式（也就是严格呈现模式）用于呈现遵循最新标准的网页，而 Quirks （包容）模式（也就是松散呈现模式或者兼容模式）用于呈现为传统浏览器而设计的网页。</p>
+		</div>
+		
+		<div class="para">
+			<strong class="q">9、CSS中 link 和@import 的区别是？</strong>
+			<p class="a">1）link属于HTML标签，而@import是CSS提供的;</p>
+			<p class="a">2）页面被加载的时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载;
+</p>
+			<p class="a">3）import只在IE5以上才能识别，而link是HTML标签，无兼容问题;</p>
+			<p class="a">4）link方式的样式的权重 高于@import的权重。</p>
+		</div>
+
+		<div class="para">
+			<strong class="q">10、介绍一下box-sizing属性？</strong>
+			<p class="a">box-sizing属性主要用来控制元素的盒模型的解析模式。默认值是content-box。
+</p>
+			<p class="a">content-box：让元素维持W3C的标准盒模型。元素的宽度/高度由border + padding + content的宽度/高度决定，设置width/height属性指的是content部分的宽/高
+。</p>
+			<p class="a">border-box：让元素维持IE传统盒模型（IE6以下版本和IE6~7的怪异模式）。设置width/height属性指的是border + padding + content。</p>
+			<p class="a">标准浏览器下，按照W3C规范对盒模型解析，一旦修改了元素的边框或内距，就会影响元素的盒子尺寸，就不得不重新计算元素的盒子尺寸，从而影响整个页面的布局。
+</p>
+		</div>
+
+		<div class="para">
+			<strong class="q">11、position:absolute和float属性的异同</strong>
+			<p class="a">共同点：对内联元素设置`float`和`absolute`属性，可以让元素脱离文档流，并且可以设置其宽高。</p>
+			<p class="a"> 不同点：float仍会占据位置，position会覆盖文档流中的其他元素。</p>
+		</div>
+
+		<div class="para">
+			<strong class="q">12、position的值， relative和absolute分别是相对于谁进行定位的？</strong>
+			<p class="a">absolute：生成绝对定位的元素，相对于最近一级的定位不是 static 的父元素来进行定位。fixed （老IE不支持）生成绝对定位的元素，相对于浏览器窗口进行定位。</p>
+			<p class="a"> relative：生成相对定位的元素，相对于其在普通流中的位置进行定位。static 默认值。没有定位，元素出现在正常的流中。</p>
+		</div>
+
+		<div class="para">
+			<strong class="q">13、解释下浮动和它的工作原理？清除浮动的技巧</strong>
+			<p class="a">浮动元素脱离文档流，不占据空间。浮动元素碰到包含它的边框或者浮动元素的边框停留。</p>
+			<p class="a"> 1、使用空标签清除浮动。 这种方法是在所有浮动标签后面添加一个空标签 定义css clear:both. 弊端就是增加了无意义标签。</p>
+			<p class="a"> 2、使用overflow。 给包含浮动元素的父标签添加css属性 overflow:auto; zoom:1; zoom:1用于兼容IE6。</p>
+			<p class="a"> 3、使用after伪对象清除浮动。 该方法只适用于非IE浏览器。使用中需注意:该方法中必须为需要清除浮动元素的伪对象中设置 height:0，否则该元素会比实际高出若干像素。</p>
+		</div>
+
+		<div class="para">
+			<strong class="q">14、解释下浮动和它的工作原理？清除浮动的技巧</strong>
+			<p class="a">浮动元素脱离文档流，不占据空间。浮动元素碰到包含它的边框或者浮动元素的边框停留。</p>
+			<p class="a"> 1、使用空标签清除浮动。 这种方法是在所有浮动标签后面添加一个空标签 定义css clear:both. 弊端就是增加了无意义标签。</p>
+			<p class="a"> 2、使用overflow。 给包含浮动元素的父标签添加css属性 overflow:auto; zoom:1; zoom:1用于兼容IE6。</p>
+			<p class="a"> 3、使用after伪对象清除浮动。 该方法只适用于非IE浏览器。使用中需注意:该方法中必须为需要清除浮动元素的伪对象中设置 height:0，否则该元素会比实际高出若干像素。</p>
+		</div>
+
+		<div class="para">
+			<strong class="q">15、CSS3有哪些新特性？</strong>
+			<p class="a"> 1、CSS3实现圆角（border-radius），阴影（box-shadow）</p>
+			<p class="a"> 2、对文字加特效（text-shadow、），线性渐变（gradient），旋转（transform）</p>
+			<p class="a"> transform:rotate(9deg) scale(0.85,0.90) translate(0px,-30px) skew(-9deg,0deg);//旋转,缩放,定位,倾斜</p>
+			<p class="a"> 3、增加了更多的CSS选择器  多背景 rgba</p>
+			<p class="a"> 4、在CSS3中唯一引入的伪元素是::selection</p>
+			<p class="a"> 5、媒体查询，多栏布局</p>
+			<p class="a"> 6、border-image</p>
+		</div>
+
+		<div class="para">
+			<strong class="q">16、解释下 CSS sprites，以及你要如何在页面或网站中使用它？</strong>
+			<p class="a">CSS Sprites其实就是把网页中一些背景图片整合到一张图片文件中，再利用CSS的“background-image”，“background- repeat”，“background-position”的组合进行背景定位，background-position可以用数字能精确的定位出背景图片的位置。这样可以减少很多图片请求的开销，因为请求耗时比较长。</p>
+		</div>
+
+		<div class="para">
+			<strong class="q">17、常见的兼容性问题有哪些？</strong>
+			<p class="a">* png24位的图片在iE6浏览器上出现背景，解决方案是做成PNG8。</p>
+			<p class="a">* 浏览器默认的margin和padding不同。解决方案是加一个全局的 *{margin:0;padding:0;} 来统一。</p>
+			<p class="a">* 浏览器默认的margin和padding不同。解决方案是加一个全局的 *{margin:0;padding:0;} 来统一。</p>
+			<p class="a">* IE6双边距bug:块属性标签float后，又有横行的margin情况下，在ie6显示margin比设置的大。解决方案是在float的标签样式控制中加入_display:inline;将其转化为行内属性(_这个符号只有ie6会识别) 。</p>
+			<p class="a">*IE下,可以使用获取常规属性的方法来获取自定义属性,也可以使用getAttribute()获取自定义属性;Firefox下,只能使用getAttribute()获取自定义属性。解决方法:统一通过getAttribute()获取自定义属性。</p>
+			<p class="a">* IE下,even对象有x,y属性,但是没有pageX,pageY属性; Firefox下,event对象有pageX,pageY属性,但是没有x,y属性。解决方法：（条件注释）缺点是在IE浏览器下可能会增加额外的HTTP请求数。</p>
+			<p class="a">* Chrome 中文界面下默认会将小于 12px 的文本强制按照12px 显示，可通过加入CSS属性-webkit-text-size-adjust:none;解决。</p>
+		</div>
+
+		<div class="para">
+			<strong class="q">18、请描述一下cookies，sessionStorage和localStorage 的区别？</strong>
+			<p class="a">cookie 在浏览器和服务器间来回传递; sessionStorage 和 localStorage不会。</p>
+			<p class="a">sessionStorage 和 localStorage的存储空间更大。</p>
+			<p class="a">sessionStorage 和 localStorage有更多丰富易用的接口。</p>
+			<p class="a">sessionStorage 和 localStorage各自独立的存储空间。</p>
+		</div>
+
+		<div class="para">
+			<strong class="q">19、使用&lt;label&gt;元素显示文本与使用其他文本标记显示文本有什么不同？</strong>
+			<p class="a">&lt;label&gt;元素的直观效果是直接显示标记之间的文本，而且不会为文本呈现任何特殊效果。但是，它和其他文本标记所不同的是，它为鼠标用户改进了用户体验性。</p>
+			<p class="a">这是因为，&lt;label&gt;元素可以附带一个for属性，只要将该属性的值设置为表单中任何一个控件的id属性的值，则当用户点击该标签（文本）时，浏览器就会自动将焦点转到和标签相关的表单控件上。即：如果在&lt;label&gt;元素内点击文本，就会触发此控件。</p>
+		</div>
+
+		<div class="para">
+			<strong class="q">20、CSS中哪些属性可以继承？</strong>
+			<p class="a">1）文本相关属性：font-family、font-size、font-variant、font-weight、font、letter-spacing、line-height、text-align、text-indent、text-transform、word-spacing、color;</p>
+			<p class="a">列表相关属性：list-style-image、list-style-position、list-style;</p>
+			<p class="a">表格相关属性：border-collapse、border-spacing、caption-side、table-layoute;</p>
+			<p class="a">其他属性：Cursor、visibility。</p>
+		</div>
+
+		<div class="para">
+			<strong class="q">21、简述CSS3中的伪类选择器。</strong>
+			<p class="a">CSS3提供了大量伪类选择器，浏览器对于有些伪类选择器的支持还不太好。目前，常用的伪类选择器有：</p>
+			<p class="a">目标伪类：即:target，突出显示活动的HTML锚，用于选取当前活动的目标元素;</p>
+			<p class="a">元素状态伪类：比如:enabled、:disabled、:checked;</p>
+			<p class="a">结构伪类：比如:first-child、:last-child、:empty、:only-child;</p>
+			<p class="a">否定伪类：即:not(selector)，匹配非指定元素/选择器的每个元素。</p>
+		</div>
+
+		<div class="para">
+			<strong class="q">22、为什么建议设置背景图像的同时还设置背景颜色？</strong>
+			<p class="a">一般建议在使用背景图像的同时提供background-color属性，并且将其设置为和图像主要颜色类似的颜色。这样，如果正在加载页面，或者因为各种原因无法显示背景图像时，页面可以使用这种颜色作为背景色。</p>
+		</div>
+
+		<div class="para">
+			<strong class="q">23、过渡与动画的区别是什么？</strong>
+			<p class="a">过渡属性transition可以在一定的时间内实现元素的状态过渡为最终状态，用于模拟一种过渡动画效果，但是功能有限，只能用于制作简单的动画效果；而动画属性animation可以制作类似Flash动画，通过关键帧控制动画的每一步，控制更为精确，从而可以制作更为复杂的动画。</p>
+		</div>
+	</div>
+</body>
+</html>
+
+　　
