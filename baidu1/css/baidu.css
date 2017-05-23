@@ -1,0 +1,93 @@
+body{
+	font: 12px arial; 
+	margin: 0;
+	padding: 0;
+}
+/*header start*/
+header{
+	overflow: hidden;
+}
+nav{
+	float: right;
+	margin-top: 19px;
+}
+nav a{
+	color:#333;
+	font-weight: bold;
+	font-size: 13px;
+	margin-left: 18px;
+}
+nav a:hover,a.other:hover{
+	color: #00c;
+}
+nav a.other{
+	color: #555;
+	font-weight: normal;
+}
+.more{
+	width: 60px;
+	display: inline-block;
+	line-height: 23px;
+	background-color: #38f;
+	color: #fff;
+	font-weight: normal;
+	margin-right: 10px;
+	text-decoration:none;
+	text-align: center;
+}
+
+/*header end*/
+
+/*content start*/
+.content{
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 100px;
+}
+.content img{
+	width: 270px;
+	height: 129px;
+}
+.content input{
+	width: 530px;
+	height: 34px;
+	border: 1px solid #b6b6b6;
+	margin-top: 20px;
+	padding-left: 8px;
+}
+.content button{
+	width: 100px;
+	height: 38px;
+	color: #fff;
+	font-size: 15px;
+	letter-spacing: 1px;
+	background-color: #38f;
+	border: none;
+	cursor: pointer;
+}
+
+/*content end*/
+
+/*footer start*/
+footer{
+	text-align: center;
+	margin-top: 120px;
+	margin-bottom: 30px;
+	color: #999;
+}
+footer a{
+	color: #999;
+}
+.qrcode p{
+	line-height: 23px;
+	color: #555;
+	margin: 0;
+	font-weight: bold;
+}
+.baiduLink a{
+	margin-left: 25px;
+}
+.bei{
+	margin-left:25px; 
+}
+/*footer end*/
