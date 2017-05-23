@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>flex box</title>
+	<link rel="stylesheet" type="text/css" href="css/flex.css">
+</head>
+<body>
+	<!--flex-column begin-->
+	<h1 id="t1">弹性盒子cloumn分栏</h1>
+	<div class="common daily">
+		<!--<img src="img/rmrb.jpg">-->
+		<div class="artical">
+			<p>新华社北京3月3日电 凝心聚智谋发展，同心同德铸伟业。中国人民政治协商会议第十二届全国委员会第五次会议3日下午在人民大会堂开幕。大会期间，2000多位政协委员将紧紧围绕“十三五”规划实施等关系国计民生的重大问题，深入协商议政，认真履行职能，为实现“两个一百年”奋斗目标、实现中华民族伟大复兴的中国梦贡献智慧力量。</p>
+			<p>人民大会堂万人大礼堂内气氛庄重热烈，象征全国各族人民大团结的政协会徽悬挂在主席台正中，十面鲜艳的红旗分列两侧。</p>
+			<p>全国政协主席俞正声，全国政协副主席杜青林、韩启德、帕巴拉·格列朗杰、董建华、万钢、林文漪、罗富和、何厚铧、张庆黎、李海峰、陈元、卢展工、周小川、王家瑞、王正伟、马飚、齐续春、陈晓光、马培华、刘晓峰、王钦敏在主席台前排就座。</p>
+			<p>和国家领导人习近平、李克强、张德江、刘云山、王岐山、张高丽等在主席台就座，祝贺大会召开。</p>
+			<p>全国政协十二届五次会议应出席委员2205人，实到2134人，符合规定人数。</p>
+			<p>下午3时，杜青林宣布大会开幕，全体起立，唱国歌。</p>
+			<p>大会首先审议通过了政协第十二届全国委员会第五次会议议程。</p>
+			<p>新华社北京3月3日电 凝心聚智谋发展，同心同德铸伟业。中国人民政治协商会议第十二届全国委员会第五次会议3日下午在人民大会堂开幕。大会期间，2000多位政协委员将紧紧围绕“十三五”规划实施等关系国计民生的重大问题，深入协商议政，认真履行职能，为实现“两个一百年”奋斗目标、实现中华民族伟大复兴的中国梦贡献智慧力量。</p>
+			<p>人民大会堂万人大礼堂内气氛庄重热烈，象征全国各族人民大团结的政协会徽悬挂在主席台正中，十面鲜艳的红旗分列两侧。</p>
+			<p>全国政协主席俞正声，全国政协副主席杜青林、韩启德、帕巴拉·格列朗杰、董建华、万钢、林文漪、罗富和、何厚铧、张庆黎、李海峰、陈元、卢展工、周小川、王家瑞、王正伟、马飚、齐续春、陈晓光、马培华、刘晓峰、王钦敏在主席台前排就座。</p>
+			<p>和国家领导人习近平、李克强、张德江、刘云山、王岐山、张高丽等在主席台就座，祝贺大会召开。</p>
+			<p>全国政协十二届五次会议应出席委员2205人，实到2134人，符合规定人数。</p>
+			<p>下午3时，杜青林宣布大会开幕，全体起立，唱国歌。</p>
+			<p>大会首先审议通过了政协第十二届全国委员会第五次会议议程。</p>
+		</div>
+	</div>
+	
+	<!--flex-column end-->
+
+	<!--box-compare start-->
+	<h1 id="t2">正常盒子与怪异盒子对比及弹性盒子相关布局</h1>
+	<div class="common compare">
+		<!--up-part start-->
+		<div class="upPart">
+			<p>主要是box-sizing上的不同，正常盒子为content-box，怪异盒子为border-box。相同大小的容器，前者会因padding、border的设置而被撑大，后者不会。</p>
+		</div>
+		<!--up-part end-->
+
+		<!--down-part start-->
+		<div class="downPart">
+		
+		<!--box-normal start-->
+			<div class="layout">	
+				<div class="normal">
+					<p>box-sizing: content-box;</p>
+					<div class="mar">
+						<div class="bor">
+							<div class="pad">
+								<div class="con"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="code">
+					<div class="marCode n1">1、.mar{width: 130px; height: 130px; background-color: red; padding: 5px;}</div>
+					<div class="borCode n2">2、.bor{width: 120px; height: 120px; background-color: purple; padding: 5px;}</div>
+					<div class="padCode n1">3、.pad{width: 100px; height: 100px; background-color: lightgreen; padding: 10px;}</div>
+					<div class="conCode n2">4、.con{width: 100px; height: 100px;  background-color: orange;}</div>
+				</div>
+			</div>
+		<!--box-normal end-->
+		
+		<!--box-wired start-->
+			<div class="layout1">	
+				<div class="wired">
+					<p>box-sizing: border-box;</p>
+					<div class="mar1">
+						<div class="bor1">
+							<div class="pad1">
+								<div class="con"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="code1">
+					<div class="marCode1 n1">1、.mar1{width: 140px; height: 140px; background-color: red; padding: 5px;}</div>
+					<div class="borCode1 n2">2、.bor1{width: 130px; height: 130px; background-color: purple; padding: 5px;}</div>
+					<div class="padCode1 n1">3、.pad1{width: 120px; height: 120px; background-color: lightgreen; padding: 10px;}</div>
+					<div class="conCode n2">4、.con{width: 100px; height: 100px;  background-color: orange;}</div>
+				</div>
+			</div>
+		</div>
+		<!--box-wired end-->
+		<!--down-part end-->
+
+	</div>
+	<!--box-compare end-->
+</body>
+</html>
