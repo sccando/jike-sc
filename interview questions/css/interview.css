@@ -1,0 +1,94 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-size: 14px;
+	font-weight: 600;
+	background: #eee;
+	color: #333;
+}
+.wrapper{
+	width: 900px;
+	margin: 0 auto;
+}
+/*标题  开始*/
+.title{
+	width: 575px;
+	height: 185px;
+	margin: 40px auto;
+	background: url(../img/roll.png) no-repeat;
+}
+.title h1{
+	line-height: 175px;
+	text-align: center;
+	color: #eee;
+	letter-spacing: 6px;
+	text-shadow: 0 0 50px #000;
+}
+/*标题  结束*/
+
+/*标签  开始*/
+.tags{
+	width: 900px;
+	margin: 0 auto 40px;
+	text-align: right;
+	cursor: pointer;
+}
+.tags span{
+	display: inline-block;
+	padding: 10px;
+	border: 1px solid #b76422;
+	color: #b76422;
+	margin-right: 20px;
+	box-shadow: 2px 2px 4px #88240c;
+}
+.tags span.hover{
+	background: #b76422;
+	color: #fff;
+	box-shadow: none;
+}
+/*标签  结束*/
+
+/*正文  开始*/
+
+/*背景1*/
+.para .bg1{
+	height: 120px;
+	background: url(../img/bg1.png) no-repeat;
+}
+/*背景2*/
+.para .bg2{
+	height: 113px;
+	background: url(../img/bg2.png) no-repeat;
+}
+/*正文内容  开始*/
+.content{
+	padding: 0 150px 20px 170px;
+	box-sizing: border-box;
+	background: url(../img/bg-repeat.png) repeat-y;
+	position: relative;
+}
+.c-js,.c-others{
+	display: none;
+}
+.content .q-a{
+	margin-bottom: 10px;
+}
+.content .q{
+	font-weight: bold;
+	background: #88240c;
+	color: #fff;
+	padding: 6px;
+	display: inline-block;
+	margin-bottom: 16px;
+	box-shadow: 6px 6px 6px #c87b2b;
+}
+.content .a{
+	line-height: 1.5em;
+	text-indent: 2em;
+    /*text-shadow: 1px 1px 1px #eee,3px 3px 3px #88240c;*/
+    text-shadow: 2px 2px 6px #fff;
+}
+/*正文内容  开始*/
+/*正文  结束*/

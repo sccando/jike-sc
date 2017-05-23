@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>高级前端开发工程师面试题</title>
+	<link rel="stylesheet" type="text/css" href="css/interview.css">
+</head>
+<body>
+	<div class="wrapper">
+		<!--标题  开始-->
+		<div class="title">
+			<h1>高级前端开发工程师面试题</h1>
+		</div>
+		<!--标题  结束-->
+
+		<!--标签  开始-->
+		<div class="tags">
+			<span class="hc">HTML/CSS</span>
+			<span class="js">JavaScript</span>
+			<span class="others">其它</span>
+		</div>
+		<!--标签  结束-->
+
+		<!--内容  开始-->
+		<div class="para">
+			<div class="bg1"></div>
+
+			<!--HTML/CSS  开始-->
+			<div class="content c-hc">
+				<div class="q-a">
+					<strong class="q">1、你能描述一下渐进增强和优雅降级之间的不同吗？</strong>
+					<p class="a">渐进增强 progressive enhancement：针对低版本浏览器进行构建页面，保证最基本的功能，然后再针对高级浏览器进行效果、交互等改进和追加功能达到更好的用户体验。</p>
+					<p class="a">优雅降级 graceful degradation：一开始就构建完整的功能，然后再针对低版本浏览器进行兼容。</p>
+					<p class="a">区别：优雅降级是从复杂的现状开始，并试图减少用户体验的供给，而渐进增强则是从一个非常基础的，能够起作用的版本开始，并不断扩充，以适应未来环境的需要。降级（功能衰减）意味着往回看；而渐进增强则意味着朝前看，同时保证其根基处于安全地带。</p>
+				</div>
+				<div class="q-a">
+					<strong class="q">2、简述一下src与href的区别。</strong>
+					<p class="a">src用于替换当前元素，href用于在当前文档和引用资源之间确立联系。</p>
+					<p class="a">1）src是source的缩写，指向外部资源的位置，指向的内容将会嵌入到文档中当前标签所在位置；在请求src资源时会将其指向的资源下载并应用到文档内，例如js脚本，img图片和frame等元素。</p>
+					<p class="a">当浏览器解析到该元素时，会暂停其他资源的下载和处理，直到将该资源加载、编译、执行完毕，图片和框架等元素也如此，类似于将所指向资源嵌入当前标签内。这也是为什么将js脚本放在底部而不是头部。</p>
+					<p class="a">2）href是Hypertext Reference的缩写，指向网络资源所在位置，建立和当前元素（锚点）或当前文档（链接）之间的链接，如果我们在文档中添加 <link href=”common.css” rel=”stylesheet”/> ，那么浏览器会识别该文档为css文件，就会并行下载资源并且不会停止对当前文档的处理。这也是为什么建议使用link方式来加载css，而不是使用@import方式。</p>
+				</div>
+				<div class="q-a">
+					<strong class="q">3、网页制作会用到的图片格式有哪些？</strong>
+					<p class="a">png-8，png-24，jpeg，gif，svg，Webp。</p>
+					<p class="a">科普一下Webp：WebP格式，谷歌（google）开发的一种旨在加快图片加载速度的图片格式。图片压缩体积大约只有JPEG的2/3，并能节省大量的服务器带宽资源和数据空间。</p>
+					<p class="a">Facebook Ebay等知名网站已经开始测试并使用WebP格式。</p>
+				</div>
+				<div class="q-a">
+					<strong class="q">4、知道什么是微格式吗？谈谈理解。在前端构建中应该考虑微格式吗？</strong>
+					<p class="a">微格式（Microformats）是一种让机器可读的语义化XHTML词汇的集合，是结构化数据的开放标准。是为特殊应用而制定的特殊格式。</p>
+					<p class="a">优点：将智能数据添加到网页上，让网站内容在搜索引擎结果界面可以显示额外的提示。（应用范例：豆瓣，有兴趣自行google）</p>
+				</div>
+				<div class="q-a">
+					<strong class="q">5、一个页面上有大量的图片（大型电商网站），加载很慢，你有哪些方法优化这些图片的加载，给用户更好的体验？</strong>
+					<p class="a">1）图片懒加载。在页面上的未可视区域可以添加一个滚动条事件，判断图片位置与浏览器顶端的距离与页面的距离，如果前者小于后者，优先加载。</p>
+					<p class="a">2）如果为幻灯片、相册等，可以使用图片预加载技术，将当前展示图片的前一张和后一张优先下载。</p>
+					<p class="a">3）如果图片为css图片，可以使用CSSsprite，SVGsprite，Iconfont、Base64等技术。</p>
+					<p class="a">4）如果图片过大，可以使用特殊编码的图片，加载时会先加载一张压缩的特别厉害的缩略图，以提高用户体验。</p>
+					<p class="a">5）如果图片展示区域小于图片的真实大小，则因在服务器端根据业务需要先行进行图片压缩，图片压缩后大小与展示一致。</p>
+				</div>
+				<div class="q-a">
+					<strong class="q">6、超链接访问过后hover样式就不出现的问题是什么？如何解决？</strong>
+					<p class="a">被点击访问过的超链接样式不在具有hover和active了,解决方法是改变CSS属性的排列顺序: L-V-H-A（link,visited,hover,active）</p>
+				</div>
+				<div class="q-a">
+					<strong class="q">7、rgba()和opacity的透明效果有什么不同？</strong>
+					<p class="a">rgba()和opacity都能实现透明效果，但最大的不同是：</p>
+					<p class="a">opacity作用于元素，以及元素内的所有内容的透明度;</p>
+					<p class="a">rgba()只作用于元素的颜色或其背景色。（设置rgba透明的元素的子元素不会继承透明效果！）</p>
+				</div>
+				<div class="q-a">
+					<strong class="q">8、描述一个”reset”的CSS文件并如何使用它。知道normalize.css吗？你了解他们的不同之处？</strong>
+					<p class="a">重置样式非常多，凡是前端开发人员肯定有一个常用的重置CSS文件并知道如何使用它们。原因是不同的浏览器对一些元素有不同的默认样式，如果你不处理，在不同的浏览器下会存在必要的风险，或者更有戏剧性的性发生。</p>
+					<p class="a">比如，Normalize，它没有重置所有的样式风格，但仅提供了一套合理的默认样式值。既能让众多浏览器达到一致和合理，但又不扰乱其他的东西（如粗体的标题）。</p>
+				</div>
+				<div class="q-a">
+					<strong class="q">9、Sass、LESS是什么？大家为什么要使用他们？</strong>
+					<p class="a">他们是CSS预处理器。他是CSS上的一种抽象层。他们是一种特殊的语法/语言编译成CSS。</p>
+					<p class="a">例如Less是一种动态样式语言。 将CSS赋予了动态语言的特性，如变量，继承，运算， 函数。 LESS 既可以在客户端上运行 (支持IE 6+, Webkit, Firefox)，也可一在服务端运行 (借助 Node.js)。</p>
+					<p class="a">使用他们，是因为：</p>
+					<p class="a">1）结构清晰，便于扩展。</p>
+					<p class="a">2）可以方便地屏蔽浏览器私有语法差异。这个不用多说，封装对浏览器语法差异的重复处理，减少无意义的机械劳动。</p>
+					<p class="a">3）可以轻松实现多重继承。</p>
+					<p class="a">4）完全兼容 CSS 代码，可以方便地应用到老项目中。LESS 只是在 CSS 语法上做了扩展，所以老的 CSS 代码也可以与 LESS 代码一同编译。</p>
+				</div>
+				<div class="q-a">
+					<strong class="q">10、请描述一下cookies、sessionStorage和localStorage的区别？</strong>
+					<p class="a">sessionStorage和localStorage统称为Web storage。</p>
+					<p class="a">Web Storage的概念和cookie相似，区别是它是为了更大容量存储设计的。cookie的大小是受限的，并且每次你请求一个新的页面的时候cookie都会被发送过去，这样无形中浪费了带宽，另外cookie还需要指定作用域，不可以跨域调用。</p>
+					<p class="a">除此之外，Web Storage拥有setItem，getItem，removeItem，clear等方法，不像cookie需要前端开发者自己封装setCookie，getCookie。但是Cookie也是不可以或缺的：cookie的作用是与服务器进行交互，作为HTTP规范的一部分而存在 ，而Web Storage仅仅是为了在本地“存储”数据而生。</p>
+					<p class="a">sessionStorage用于本地存储一个会话（session）中的数据，这些数据只有在同一个会话中的页面才能访问并且当会话结束后数据也随之销毁。因此sessionStorage不是一种持久化的本地存储，仅仅是会话级别的存储。而localStorage用于持久化的本地存储，除非主动删除数据，否则数据是永远不会过期的。</p>
+				</div>
+				<div class="q-a">
+					<strong class="q">11、什么是重构、回流？</strong>
+					<p class="a">浏览器的重构指的是改变每个元素外观时所触发的浏览器行为，比如颜色，背景等样式发生了改变而进行的重新构造新外观的过程。重构不会引发页面的重新布局，不一定伴随着回流；</p>
+					<p class="a">回流指的是浏览器为了重新渲染页面的需要而进行的重新计算元素的几何大小和位置的，他的开销是非常大的，回流可以理解为渲染树需要重新进行计算，一般最好触发元素的重构，避免元素的回流；比如通过通过添加类来添加css样式，而不是直接在DOM上设置，当需要操作某一块元素时候，最好使其脱离文档流，这样就不会引起回流了，比如设置position：absolute或者fixed，或者display：none，等操作结束后在显示。</p>
+				</div>
+				<div class="q-a">
+					<strong class="q">12、写出几种IE6 BUG的解决方法。</strong>
+					<p class="a">1）双边距BUG float引起的 使用display；</p>
+					<p class="a">2）3像素问题 使用float引起的 使用dislpay:inline -3px；</p>
+					<p class="a">3）超链接hover 点击后失效 使用正确的书写顺序 link visited hover active；</p>
+					<p class="a">4）Ie z-index问题 给父级添加position:relative；</p>
+					<p class="a">5）Png 透明 使用js代码改</p>
+					<p class="a">6）Min-height 最小高度 ！Important 解决；</p>
+					<p class="a">7）select 在ie6下遮盖 使用iframe嵌套；</p>
+					<p class="a">8）为什么没有办法定义1px左右的宽度容器（IE6默认的行高造成的，使用over:hidden；zoom:0.08；line-height:1px；）。</p>
+				</div>
+			</div>
+			<!--HTML/CSS  结束-->
+
+			<!--JS  开始-->
+			<div class="content c-js">
+				<div class="q-a">
+					<strong class="q">1、在Javascript中什么是伪数组？如何将伪数组转化为标准数组？</strong>
+					<p class="a">伪数组（类数组）：无法直接调用数组方法或期望length属性有什么特殊的行为，但仍可以对真正数组遍历方法来遍历它们。典型的是函数的argument参数，还有像调用getElementsByTagName，document.childNodes之类的，它们都返回NodeList对象都属于伪数组。</p>
+					<p class="a">可以使用Array.prototype.slice.call(fakeArray)将数组转化为真正的Array对象。</p>
+				</div>
+				<div class="q-a">
+					<strong class="q">2、请解释什么是事件代理？</strong>
+					<p class="a">事件代理（Event Delegation），又称之为事件委托。是 JavaScript 中常用绑定事件的常用技巧。顾名思义，“事件代理”即是把原本需要绑定的事件委托给父元素，让父元素担当事件监听的职务。事件代理的原理是 DOM 元素的事件冒泡。使用事件代理的好处是可以提高性能。</p>
+				</div>
+				<div class="q-a">
+					<strong class="q">3、new 操作符到底做了什么？</strong>
+					<p class="a">首先，new操作符为我们创建一个新的空对象，然后this变量指向该对象；</p>
+					<p class="a">其次，空对象的原型执行函数的原型；</p>
+					<p class="a">最后，改变构造函数内部的this的指向。</p>
+				</div>
+				<div class="q-a">
+					<strong class="q">4、改变函数内部this指针的指向函数</strong>
+					<p class="a">call和apply，假设要改变fn函数内部的this的指向，指向obj，那么可以fn.call(obj);或者fn.apply(obj);。</p>
+					<p class="a">call和apply的区别是什么？call和apply的区别在于参数，他们两个的第一个参数都是一样的，表示调用该函数的对象，apply的第二个参数是数组，是[arg1,arg2,arg3]这种形式，而call是arg1,arg2,arg3这样的形式。</p>
+					<p class="a">还有一个bind函数，var bar=fn.bind(obj);那么fn中的this就指向obj对象了，bind函数返回新的函数，这个函数内的this指针指向obj对象。</p>
+				</div>
+				<div class="q-a">
+					<strong class="q">5、JavaScript的作用域和作用域链</strong>
+					<p class="a">JavaScript的作用域指的是变量的作用范围，内部作用域由函数的形参，实参，局部变量，函数构成，内部作用域和外部的作用域一层层的链接起来形成作用域链，当在在函数内部要访问一个变量的时候，首先查找自己的内部作用域有没有这个变量，如果没有就到这个对象的原型对象中去查找，还是没有的话，就到该作用域所在的作用域中找，直到到window所在的作用域，每个函数在声明的时候就默认有一个外部作用域的存在了。</p>
+				</div>
+				<div class="q-a">
+					<strong class="q">6、JavaScript的值类型和引用类型</strong>
+					<p class="a">JavaScript有两种类型的数据，值类型和引用类型，一般的数字，字符串，布尔值都是值类型，存放在栈中，而对象，函数，数组等是引用类型，存放在堆中，对引用类型的复制其实是引用复制，相当于复制着地址，对象并没有真正的复制。</p>
+				</div>
+				<div class="q-a">
+					<strong class="q">7、什么是闭包（closure），为什么要用它？</strong>
+					<p class="a">闭包是指有权访问另一个函数作用域中变量的函数，创建闭包的最常见的方式就是在一个函数内创建另一个函数，通过另一个函数访问这个函数的局部变量,利用闭包可以突破作用链域，将函数内部的变量和方法传递到外部。</p>
+					<p class="a">闭包的特性：</p>
+					<p class="a">1）函数内再嵌套函数；</p>
+					<p class="a">2）内部函数可以引用外层的参数和变量；</p>
+					<p class="a">3）参数和变量不会被垃圾回收机制回收。</p>
+				</div>
+				<div class="q-a">
+					<strong class="q">8、Ajax 是什么? 如何创建一个Ajax？</strong>
+					<p class="a">ajax的全称：Asynchronous Javascript And XML。异步传输+js+xml</p>
+					<p class="a">所谓异步，就是向服务器发送请求的时候，我们不必等待结果，而是可以同时做其他的事，等到有了结果它自己会根据设定进行后续操作，与此同时，页面是不会发生整页刷新的，提高了用户体验。</p>
+					<p class="a">1）创建XMLHttpRequest对象，也就是创建一个异步调用对象；</p>
+					<p class="a">2）创建一个新的HTTP请求，并指定该HTTP请求的方法、URL及验证信息；</p>
+					<p class="a">3）设置响应HTTP请求状态变化的函数；</p>
+					<p class="a">4）发送HTTP请求；</p>
+					<p class="a">5）获取异步调用返回的数据；</p>
+					<p class="a">6）使用Javascript和DOM实现局部刷新。</p>
+				</div>
+				<div class="q-a">
+					<strong class="q">9、JavaScript 的垃圾收集机制</strong>
+					<p class="a">javascript具有自动垃圾收集机制，也就是说，执行环境会负责管理代码执行过程中的使用的内存。而在C和C++之类的语言中，开发人员的一项基本任务就是手动跟踪内存的使用情况，这是造成许多问题的一个根源。在编写javascript程序时候，开发人员不用再关心内存使用的问题，所需内存的分配 以及无用的回收完全实现了自动管理。</p>
+					<p class="a">JavaScript中最常用的垃圾收集方式是标记清除(mark-and-sweep)。当变量进入环境（例如，在函数中声明一个变量）时，就将这个变量标记为“进入环境”。从逻辑上讲，永远不能释放进入环境的变量所占的内存，因为只要执行流进入相应的环境，就可能用到它们。而当变量离开环境时，这将其 标记为“离开环境”。</p>
+				</div>
+				<div class="q-a">
+					<strong class="q">10、JavaScript常见的内存泄漏原因？</strong>
+					<p class="a">虽然JavaScript 会自动垃圾收集，但是如果我们的代码写法不当，会让变量一直处于“进入环境”的状态，无法被回收。下面列一下内存泄露常见的几种情况。</p>
+					<p class="a">1）全局变量引起的内存泄漏；</p>
+					<p class="a">2）闭包引起的内存泄漏；</p>
+					<p class="a">3）DOM清空或删除时，事件未清除导致的内存泄漏；</p>
+					<p class="a">4）子元素存在引用引起的内存泄漏。</p>
+				</div>
+				<div class="q-a">
+					<strong class="q">11、AMD 和 CMD 的区别有哪些？</strong>
+					<p class="a">AMD 是 RequireJS 在推广过程中对模块定义的规范化产出。</p>
+					<p class="a">CMD 是 SeaJS 在推广过程中对模块定义的规范化产出。</p>
+					<p class="a">类似的还有 CommonJS Modules/2.0 规范，是 BravoJS 在推广过程中对模块定义的规范化产出。</p>
+					<p class="a">这些规范的目的都是为了 JavaScript 的模块化开发，特别是在浏览器端的。目前这些规范的实现都能达成浏览器端模块化开发的目的。</p>
+					<p class="a">区别：1）对于依赖的模块，AMD 是提前执行，CMD 是延迟执行。不过 RequireJS 从 2.0 开始，也改成可以延迟执行（根据写法不同，处理方式不同）。CMD 推崇 as lazy as possible。</p>
+					<p class="a">2） CMD 推崇依赖就近，AMD 推崇依赖前置。</p>
+					<p class="a">3）AMD 的 API 默认是一个当多个用，CMD 的 API 严格区分，推崇职责单一。比如 AMD 里，require 分全局 require 和局部 require，都叫 require。CMD 里，没有全局 require，而是根据模块系统的完备性，提供 seajs.use 来实现模块系统的加载启动。CMD 里，每个 API 都简单纯粹。</p>
+				</div>
+			</div>
+			<!--JS  结束-->
+
+			<!--其它  开始-->
+			<div class="content c-others">
+				<div class="q-a">
+					<strong class="q">1、请优化某网页的加载速度。</strong>
+					<p class="a">1）静态资源使用cdn加速；</p>
+					<p class="a">2）使用CSS精灵技术：所有Tenerife图片都是一张大图片，使用CSS控制坐标；</p>
+					<p class="a">3）合并并且压缩js/css;</p>
+					<p class="a">4）页面懒加载（类似于音悦台，淘宝）;</p>
+					<p class="a">5）使用giz压缩文本和图片;</p>
+					<p class="a">6）使用 Progressive JPEGs:在装入图像时，开始只显示一个模糊的图像，随着数据的装入，图像逐步变得清晰。</p>
+				</div>
+				<div class="q-a">
+					<strong class="q">2、一次完整的HTTP事务是怎样的一个过程？</strong>
+					<p class="a">基本流程：1）域名解析；2）发起TCP的3次握手；3）建立TCP连接后发起http请求；4）服务器端响应http请求，浏览器得到html代码；5）浏览器解析html代码，并请求html代码中的资源；6） 浏览器对页面进行渲染呈现给用户。</p>
+				</div>
+				<div class="q-a">
+					<strong class="q">3、说说TCP传输的三次握手四次挥手策略。</strong>
+					<p class="a">为了准确无误地把数据送达目标处，TCP协议采用了三次握手策略。用TCP协议把数据包送出去后， TCP不会对传送后的情况置之不理，它一定会向对方确认是否成功送达。握手过程中使用了TCP的标志： SYN 和 ACK 。</p>
+					<p class="a">发送端首先发送一个带 SYN 标志的数据包给对方。接收端收到后，回传一个带有 SYN/ACK标志的数据包以示传达确认信息。最后，发送端再回传一个带ACK标志的数据包，代表“握手”结束。若在握手过程中某个阶段莫名中断，TCP 协议会再次以相同的顺序发送相同的数据包。</p>
+					<p class="a">断开一个TCP连接则需要“四次握手”：</p>
+					<p class="a">第一次挥手：主动关闭方发送一个FIN，用来关闭主动方到被动关闭方的数据传送，也就是主动关闭方告诉被动关闭方：我已经不会再给你发数据了(当然，在fin包之前发送出去的数据，如果没有收到对应的ack确认报文，主动关闭方依然会重发这些数据)，但是，此时主动关闭方还可以接受数据。</p>
+					<p class="a">第二次挥手：被动关闭方收到 FIN 包后，发送一个 ACK 给对方，确认序号为收到序号 +1 （与 SYN 相同，一个 FIN 占用一个序号）。</p>
+					<p class="a">第三次挥手：被动关闭方发送一个 FIN ，用来关闭被动关闭方到主动关闭方的数据传送，也就是告诉主动关闭方，我的数据也发送完了，不会再给你发数据了。</p>
+					<p class="a">第四次挥手：主动关闭方收到 FIN 后，发送一个 ACK 给被动关闭方，确认序号为收到序号+1，至此，完成四次挥手。</p>
+				</div>
+				<div class="q-a">
+					<strong class="q">4、谈谈从前端角度出发做好SEO需要考虑什么？</strong>
+					<p class="a">1）了解搜索引擎如何抓取网页和如何索引网页。你需要知道一些搜索引擎的基本工作原理，各个搜索引擎之间的区别，搜索机器人（SE robot 或叫 web crawler）如何进行工作，搜索引擎如何对搜索结果进行排序等等。</p>
+					<p class="a">2）Meta标签优化。主要包括主题（Title)，网站描述(Description)，和关键词（Keywords）。还有一些其它的隐藏文字比如Author（作者），Category（目录），Language（编码语种）等。</p>
+					<p class="a">3）如何选取关键词并在网页中放置关键词。搜索就得用关键词。关键词分析和选择是SEO最重要的工作之一。首先要给网站确定主关键词（一般在5个上下），然后针对这些关键词进行优化，包括关键词密度（Density），相关度（Relavancy），突出性（Prominency）等等。</p>
+					<p class="a">4）了解主要的搜索引擎。虽然搜索引擎有很多，但是对网站流量起决定作用的就那么几个。比如英文的主要有Google，Yahoo，Bing等；中文的有百度，搜狗，有道等。不同的搜索引擎对页面的抓取和索引、排序的规则都不一样。还要了解各搜索门户和搜索引擎之间的关系，比如AOL网页搜索用的是Google的搜索技术，MSN用的是Bing的技术。</p>
+					<p class="a">5）主要的互联网目录。Open Directory自身不是搜索引擎，而是一个大型的网站目录，他和搜索引擎的主要区别是网站内容的收集方式不同。目录是人工编辑的，主要收录网站主页；搜索引擎是自动收集的，除了主页外还抓取大量的内容页面。</p>
+					<p class="a">6）按点击付费的搜索引擎。搜索引擎也需要生存，随着互联网商务的越来越成熟，收费的搜索引擎也开始大行其道。最典型的有Overture和百度，当然也包括Google的广告项目Google Adwords。越来越多的人通过搜索引擎的点击广告来定位商业网站，这里面也大有优化和排名的学问，你得学会用最少的广告投入获得最多的点击。</p>
+					<p class="a">7）搜索引擎登录。网站做完了以后，别躺在那里等着客人从天而降。要让别人找到你，最简单的办法就是将网站提交（submit）到搜索引擎。如果你的是商业网站，主要的搜索引擎和目录都会要求你付费来获得收录（比如Yahoo要299美元），但是好消息是（至少到目前为止）最大的搜索引擎Google目前还是免费，而且它主宰着60％以上的搜索市场。</p>
+					<p class="a">8）链接交换和链接广泛度（Link Popularity）。网页内容都是以超文本（Hypertext）的方式来互相链接的，网站之间也是如此。除了搜索引擎以外，人们也每天通过不同网站之间的链接来Surfing（“冲浪”）。其它网站到你的网站的链接越多，你也就会获得更多的访问量。更重要的是，你的网站的外部链接数越多，会被搜索引擎认为它的重要性越大，从而给你更高的排名。</p>
+					<p class="a">9）合理的标签使用。</p>
+				</div>
+				<div class="q-a">
+					<strong class="q">5、简述同步和异步的区别。</strong>
+					<p class="a">同步是阻塞模式，异步是非阻塞模式。</p>
+					<p class="a">同步就是指一个进程在执行某个请求的时候，若该请求需要一段时间才能返回信息，那么这个进程将会一直等待下去，直到收到返回信息才继续执行下去。</p>
+					<p class="a">异步是指进程不需要一直等下去，而是继续执行下面的操作，不管其他进程的状态。当有消息返回时系统会通知进程进行处理，这样可以提高执行的效率。</p>
+				</div>
+				<div class="q-a">
+					<strong class="q">6、跨域的几种方式。</strong>
+					<p class="a">jsonp（利用script标签的跨域能力）跨域、websocket（html5的新特性，是一种新协议）跨域、设置代理服务器（由服务器替我们向不同源的服务器请求数据）、CORS（跨源资源共享，cross origin resource sharing）、iframe跨域、postMessage(包含iframe的页面向iframe传递消息)。</p>
+				</div>
+				<div class="q-a">
+					<strong class="q">7、谈谈对前端模块化的理解。</strong>
+					<p class="a">前端模块话就是把复杂的文件分成一个个独立的模块，比如js文件，分成独立的模块之后有利于代码的重用和维护，但是这样又会引来模块与模块之间的依赖问题，所以就有了CommonJS、AMD、CMD规范，最后出现了webpack，webpack就是前端模块化的一种解决方案，基本上大公司都会使用webpack。</p>
+				</div>
+				<div class="q-a">
+					<strong class="q">8、HTTP状态码都有哪些？</strong>
+					<p class="a">200 OK //客户端请求成功；</p>
+					<p class="a">400 Bad Request //客户端请求有语法错误，不能被服务器所理解；</p>
+					<p class="a">403 Forbidden //服务器收到请求，但是拒绝提供服务；</p>
+					<p class="a">404 Not Found //请求资源不存在，输入了错误的URL；</p>
+					<p class="a">500 Internal Server Error //服务器发生不可预期的错误；</p>
+					<p class="a">503 Server Unavailable //服务器当前不能处理客户端的请求，一段时间后可能恢复正常</p>
+				</div>
+				<div class="q-a">
+					<strong class="q">9、对前端工程师这个职位你是怎么样理解的？</strong>
+					<p class="a">1）前端是最贴近用户的程序员，前端的能力就是能让产品从 90分进化到 100 分，甚至更好；</p>
+					<p class="a">2）参与项目，快速高质量完成实现效果图，精确到1px；</p>
+					<p class="a">3）与团队成员，UI设计，产品经理的沟通；</p>
+					<p class="a">4）做好的页面结构，页面重构和用户体验；</p>
+					<p class="a">5）处理hack，兼容、写出优美的代码格式；</p>
+					<p class="a">6）针对服务器的优化、拥抱最新前端技术。</p>
+				</div>
+			</div>
+			<!--其它  结束-->
+	
+			<div class="bg2"></div>
+		</div>
+		<!--内容  结束-->
+	</div>
+
+	<script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="js/interview.js"></script>
+</body>
+</html>
