@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".search-icon").click(function(){$(".searchbox").show()}),$("#close-btn").click(function(){$(".searchbox").hide()});var c=0;$(window).scroll(function(){c=$(this).scrollTop(),c>=60?$(".top").css("display","block"):$(".top").css("display","none")})});
