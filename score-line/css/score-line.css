@@ -1,0 +1,49 @@
+body {
+    background-color: #eee;
+}
+
+.content {
+    background-color: #fff;
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -100px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 4px 20px #ccc;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 50px 20px;
+}
+
+input {
+    margin-left: 6px;
+    padding-left: 4px;
+}
+
+/*弹出的错误提示*/
+span#tips {
+    color: #f00;
+    display: block;
+    font-size: 12px;
+    position: relative;
+    left: 86px;
+    visibility: hidden;
+}
+
+/*分等级显示区*/
+p {
+    visibility: hidden;
+    line-height: 1em;
+}
+
+p span {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    font-weight: bold;
+    color: #f33;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>分数线</title>
+	<link rel="stylesheet" type="text/css" href="css/score-line.css">
+	<script type="text/javascript" src="js/score-line.js"></script>
+</head>
+<body>
+	<div class="content">
+		<!--用户输入内容区-->
+		<span>请输入该学生的分数：</span>
+		<input type="text" id="score">
+
+		<!--输入小于0或大于100或空内容时，弹出的提示信息-->
+		<span id="tips">（请输入0-100内的数字！）</span>
+
+		<!--输入0-100时不同的等级显示内容-->
+		<p id="text">
+			该生为<span id="level"></span>等生
+		</p>
+		
+		<!--确定按钮-->
+		<button id="confirm" onclick="graded()">确&nbsp;定</button>
+	</div>
+</body>
+</html>
