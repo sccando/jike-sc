@@ -1,0 +1,105 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #097187;
+	font-size: 12px;
+	color: #333;
+}
+.content{
+	background-color: #fff;
+	width: 710px;
+	border-radius: 30px;
+	margin: 10px auto;
+	padding: 0 35px 30px;
+	box-sizing: border-box;
+}
+
+/*header start*/
+header{
+	position: relative;
+}
+header .nav{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+header .nav a{
+	text-decoration: none;
+	color: #f09;
+	margin-left: 10px;
+}
+/*header end*/
+
+.title{
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	text-align:center;
+}
+
+/*table start*/
+table{
+	border: 1px solid #ccc;
+	border-collapse:collapse;
+}
+td{
+	border: 1px solid #ccc;
+	padding: 3px;
+}
+td p,span{
+	color: #00f;
+}
+p span,.hint,.addr{
+	color: #f00;
+}
+.explain p{
+	line-height: 1.5em;
+	text-align: center;
+	color: #333; 
+}
+.subTitle{
+	background-color: #eee;
+	color: #039;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 2em;
+	padding-left: 5px;
+}
+.c1{
+	width: 118px;
+	text-align: right;
+}
+.c1 b{
+	color: #f00;
+}
+input[type="text"]{
+	width: 206px;
+	height: 22px;
+}
+input[type="checkbox"]{
+	margin: 3px;
+	vertical-align: middle;
+}
+textarea{
+	width: 100%;
+	height: 8em;
+}
+strong{
+	display: inline-block;
+	line-height: 2.5em;
+}
+.submit{
+	height: 88px;
+	text-align:center;
+}
+input[type="submit"]{
+	width: 90px;
+}
+/*table end*/
+.copyRight{
+	text-align:center;
+	line-height: 1.5em;
+}
