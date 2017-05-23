@@ -1,0 +1,941 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-size: 14px;
+	color: #333;
+	background-color: #f7f7f8;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+/*头部  开始*/
+header{
+	width: 100%;
+	height: 60px;
+	border-bottom: 1px solid #eee;
+	cursor: pointer;
+}
+.header-container{
+	width: 1190px;
+	height: 60px;
+	line-height: 60px;
+	margin: 0 auto;
+	font-size: 12px;
+}
+.header-container a{
+	color: #999;
+	display: inline-block;
+	height: 60px;
+}
+.header-container a:hover{
+	background-color: #f0f0f0;
+}
+
+/*logo & 天气状况及日期  开始*/
+.header-left,.logo,.weather,.header-left a{
+	float: left;
+}
+.logo{
+	margin-right: 40px;
+}
+.weather-city{
+	padding: 0 10px;
+}
+.weather-city i{
+	display: inline-block;
+	width: 9px;
+	height: 6px;
+	margin-left: 4px;
+	background: url(../img/icons.png) no-repeat;
+	background-position: -118px -597px;
+}
+.weather-status i{
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	background: url(../img/cloudy.png) no-repeat;
+	position: relative;
+	top: 10px;
+	margin-right: 4px;
+}
+.weather-temperature{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.weather-temperature i{
+	display: inline-block;
+	width: 11px;
+	height: 11px;
+	background: url(../img/icons.png) no-repeat;
+	background-position: -515px -449px;
+	margin-left: 4px;
+}
+.date,.nongli,.xingzuo{
+	padding: 0 10px;
+	margin-left: 6px;
+}
+/*logo & 天气状况及日期  结束*/
+
+/*头部右边部分  开始*/
+.header-right{
+	float: right;
+}
+.header-right a{
+	padding: 0 10px;
+}
+.login i{
+	display: inline-block;
+	width: 15px;
+	height: 14px;
+	background: url(../img/icons.png) no-repeat;
+	background-position: -529px -528px;
+	margin-right: 8px;
+	position: relative;
+	top: 2px;
+}
+.header-right .cba{
+	color: #0aa770;
+	margin-right: 40px;
+}
+/*头部右边部分  结束*/
+
+/*折角广告部分  开始*/
+.ad{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.ad a{
+	display: block;
+	width: 90px;
+	height: 90px;
+	background: url(../img/ad.png) no-repeat;
+	background-position: 0 0;
+}
+.ad a:hover{
+	background: url(../img/ad.png) no-repeat;
+	background-position: -720px 0;
+}
+.ad i{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 33px;
+	right: 32px;
+}
+.ad:hover i{
+	top: 43px;
+	right: 42px;
+}
+/*折角广告部分  结束*/
+/*头部  结束*/
+
+/*搜索部分  开始*/
+.search{
+	width: 1190px;
+	margin: 0 auto;
+	margin-top: 27px;
+	position: relative;
+}
+.search:after{
+	display: block;
+	content: '';
+	clear: both;
+}
+.search img,.search .search-part,.search .color{
+	float: left;
+}
+/*百度Logo  开始*/
+.search img{
+	margin: 4px 30px 0 150px;
+}
+/*百度Logo  结束*/
+
+.search-part{
+	position: relative;
+}
+/*搜索框  开始*/
+.search-part input{
+	float: left;
+	width: 538px;
+	height: 44px;
+	border: 1px solid #666;
+	border-right: 0;
+	background: #fff;
+	box-sizing: border-box;
+	padding-left: 68px;
+	font-size: 16px;
+}
+/*搜索分类  开始*/
+.search-part span{
+	display: inline-block;
+	width: 58px;
+	height: 44px;
+	line-height: 44px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 12px;
+	color: #999;
+	text-align: center;
+	cursor: pointer;
+}
+.search-part i{
+	display: inline-block;
+	width: 9px;
+	height: 6px;
+	background: url(../img/icons.png) no-repeat;
+	background-position:  -60px -597px;
+	margin-left: 6px;
+	position: relative;
+	top: -33px;
+	left: 40px;
+}
+.search-part i.rotate{
+	transform: rotate(180deg);
+	transform: -webkit-rotate(180deg);
+	transform: -moz-rotate(180deg);
+}
+.search-part .search-item{
+	position: absolute;
+	top: 43px;
+	left: 0;
+	border: 1px solid #666;
+	border-top: 0;
+	background: #fff;
+	font-size: 12px;
+	text-align: center;
+	display: none;
+	z-index: 20;
+}
+.search-part .search-item a{
+	color: #999;
+	display: block;
+	width: 58px;
+	height: 24px;
+	line-height: 24px;
+}
+.search-part .search-item a:hover{
+	background: #f1f1f1;
+}
+/*搜索分类  结束*/
+
+/*热搜新闻  开始*/
+.search-part .hot-num{
+	width: 18px;
+	height: 18px;
+	line-height: 18px;
+	border-radius: 50%;
+	background: #ccc;
+	position: absolute;
+	top: 13px;
+	right: 128px;
+	font-size: 10px;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+}
+.search-part .hot-num:hover{
+	color: #f00;
+}
+.search-part .hot-news{
+	width: 537px;
+	background: #fff;
+	border: 1px solid #666;
+	border-top: 0;
+	position: absolute;
+	top: 44px;
+	left: 0;
+	z-index: 2;
+	display: none;
+}
+.search-part .hot-news a{
+	display: block;
+	height: 24px;
+	line-height: 24px;
+	padding: 2px 0 2px 9px;
+}
+.search-part .hot-news a:hover{
+	background: #f1f1f1;
+}
+.search-part .hot-news a span{
+	display: inline-block;
+	width: 18px;
+	height: 16px;
+	line-height: 16px;
+	color: #fff;
+	font-weight: bold;
+	position: relative;
+	margin-right: 10px;
+	background: url(../img/icons.png) no-repeat;
+}
+.search-part .hot-news a.n1 span{
+	background-position: -163px -194px;
+}
+.search-part .hot-news a.n2 span{
+	background-position: -58px -309px;
+	color: #999;
+}
+.search-part .hot-news a i{
+	display: inline-block;
+	width: 12px;
+	height: 16px;
+	background: url(../img/icons.png) no-repeat;
+	background-position: -514px -561px;
+	margin-left: 6px;
+	position: relative;
+	top: 3px;
+}
+/*热搜新闻  结束*/
+/*搜索框  结束*/
+
+/*搜索按钮  开始*/
+.search-part button{
+	float: left;
+	width: 118px;
+	height: 44px;
+	border: 0;
+	font-size: 16px;
+	color: #222;
+	background: #e6e6e6;
+	border: 1px solid #666;
+	cursor: pointer;
+	background-image: -moz-linear-gradient(#fff,#e6e6e6);
+	background-image: -webkit-linear-gradient(#fff,#e6e6e6);
+	background-image: -ms-linear-gradient(#fff,#e6e6e6);
+	background-image: linear-gradient(#fff,#e6e6e6);
+}
+.search-part button:hover{
+	background: #e6e6e6;
+}
+/*搜索按钮  结束*/
+
+/*换色部分 开始*/
+.search .change-color{
+	height: 44px;
+	line-height: 44px;
+	margin-left: 30px;
+	cursor: pointer;
+	position: absolute;
+	right: 50px;
+}
+.search .change-color span{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.search .change-color #red{
+	background-color: #f00;
+}
+.search .change-color #orange{
+	background-color: orange;
+}
+.search .change-color #yellow{
+	background-color: #ff0;
+}
+.search .change-color #green{
+	background-color: #0f0;
+}
+.search .change-color #blue{
+	background-color: #00f;
+}
+/*换色部分 结束*/
+
+/*热搜词  开始*/
+.search-hot{
+	width: 658px;
+	height: 20px;
+	line-height: 20px;
+	margin: 6px 0 20px;
+	font-size: 12px;
+	position: absolute;
+	top: 44px;
+	left: 300px;
+}
+.search-hot .search-icon{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: url(../img/icons.png) no-repeat;
+	background-position: -348px -425px;
+	position: relative;
+	top: 3px;
+	margin-right: 4px;
+}
+.search-hot a{
+	color: #666;
+	margin-right: 20px;
+}
+.search-hot a:hover{
+	text-decoration: underline;
+	color: #f00;
+}
+.search-hot .hot{
+	color: #f00;
+}
+/*热搜词  结束*/
+/*搜索部分  结束*/
+
+/*导航  开始*/
+nav{
+	width: 1190px;
+	margin: 40px auto 10px;
+}
+nav ul{
+	width: 100%;
+	height: 38px;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+nav ul li{
+	float: left;
+	list-style: none;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+}
+nav ul.menu li{
+	width: 122px;
+}
+nav ul.menu li.first{
+	width: 92px;
+}
+nav ul.menu li a{
+	display: inline-block;
+	width: 100%;
+	color: #fff;
+	background: #0aa770;
+}
+nav ul.menu li a:hover{
+	background: #0a9970;
+}
+nav ul.recommend{
+	background: #fff;
+	border: solid 1px #ade0c1;
+}
+nav ul.recommend li span{
+	display: inline-block;
+	width: 80px;
+	height: 20px;
+	line-height: 20px;
+	color: #185;
+	border-right: 1px solid #eaeaea;
+	margin-right: 36px;
+}
+nav ul.recommend li a{
+	margin-right: 36px;
+}
+nav ul.recommend li a:hover{
+	color: #f50;
+	text-decoration: underline;
+}
+/*导航  结束*/
+
+/*主体  开始*/
+.content{
+	width: 1190px;
+	margin: 0 auto;
+}
+/*侧边索引及新闻  开始*/
+section{
+	width: 280px;
+	background-color: #fcfcfc;
+	border: 1px solid #cecece;
+	overflow: hidden;
+	float: left;
+}
+section ul li{
+	list-style: none;
+	float: left;
+}
+/*菜单  开始*/
+section .category{
+	box-sizing: border-box;
+	padding: 9px 0 0 18px;
+	overflow: hidden;
+}
+.category li{
+	width: 128px;
+}
+.category li i{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	position: relative;
+	top: 6px;
+	background: url(../img/icons.png) no-repeat;
+}
+.category li i.tv{
+	background-position: -354px -525px; 
+}
+.category li i.game{
+	background-position: -507px -478px; 
+}
+.category li i.movie{
+	background-position: -563px -525px; 
+}
+.category li i.animation{
+	background-position: -99px -561px; 
+}
+.category li i.news{
+	background-position: -247px -525px; 
+}
+.category li i.travel{
+	background-position: -96px -307px; 
+}
+.category li i.guess{
+	background-position: -235px -560px; 
+}
+.category li i.smile{
+	background-position: -163px -157px; 
+}
+.category li i.phone{
+	background-position: -326px -280px; 
+}
+.category li i.shares{
+	background-position: -431px -424px; 
+}
+.category li a{
+	display: inline-block;
+	line-height: 26px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.category li a:hover{
+	color: #f50;
+	text-decoration: underline;
+}
+/*菜单  结束*/
+
+/*工具  开始*/
+section .tools{
+	border-top: 1px solid #ebebeb;
+	padding-top: 10px;
+	overflow: hidden;
+	position: relative;
+}
+section .tools i{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-left: 18px;
+	margin-right: 10px;
+	float: left;
+	background: url(../img/icons.png) no-repeat;
+	background-position: -167px -308px;
+}
+section .tools i.arrow-up{
+	width: 14px;
+	height: 14px;
+	background-position: -89px -595px;
+	position: absolute;
+	right: 0px;
+	top: 15px;
+}
+section .tools ul{
+	float: left;
+	width: 232px;
+	height: 31px;
+	overflow: hidden;
+}
+section .tools li a{
+	display: inline-block;
+	width: 44px;
+	font-size: 12px;
+	color: #666;
+	margin-bottom: 10px;
+}
+section .tools li a:hover{
+	text-decoration: underline;
+}
+
+/*工具  结束*/
+
+/*新闻分类  开始*/
+section .news{
+	height: 225px;
+}
+section .news .news-nav{
+	height: 34px;
+	line-height: 34px;
+	background: #f7f7f8;
+	position: relative;
+}
+section .news-nav a{
+	display: inline-block;
+	width: 51px;
+	line-height: 1.5em;
+	text-align: center;
+	color: #616161;
+	border-right: 1px solid #eaeaea;
+	float: left;
+	position: relative;
+	top: 6px;
+}
+section .news-nav a:hover{
+	color: #0aa770;
+}
+section .news-nav a.news-pe{
+	border-right: 0;
+}
+section .news-nav i{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background: url(../img/icons.png) no-repeat;
+	background-position: -482px -447px;
+	position: absolute;
+	top: 10px;
+	right: 14px;
+}
+section .news-nav i:hover{
+	background-position: -269px -562px;
+}
+section .news-nav .fold-nav{
+	background: #f7f7f8;
+	text-align: center;
+	position: absolute;
+	top: 34px;
+	right: 0;
+	display: none;
+}
+section .news-nav .fold-nav li{
+	float: none;
+	width: 74px;
+	height: 33px;
+}
+section .news-nav .fold-nav a{
+	display: block;
+	width: 74px;
+	height: 33px;
+	line-height: 33px;
+	color: #616161;
+	position: relative;
+	top: 0;
+}
+section .news-nav .fold-nav a:hover{
+	color: #0aa770;
+}
+
+/*新闻图片  开始*/
+section .news-pic{
+	width: 280px;
+	height: 120px;
+}
+/*新闻图片  结束*/
+
+/*新闻列表  开始*/
+section .news-list li{
+	width: 248px;
+	height: 28px;
+	line-height: 28px;
+	padding: 0 18px;
+}
+section .news-list li i{
+	display: inline-block;
+	width: 4px;
+	height: 4px;
+	background: #cecece;
+	position: relative;
+	top: -3px;
+	left: -5px;
+}
+section .news-list li a:hover{
+	color: #f50;
+	text-decoration: underline;
+}
+/*新闻列表  结束*/
+/*新闻分类  结束*/
+/*侧边索引及新闻  结束*/
+
+/*主体内容区  开始*/
+article{
+	width: 898px;
+	float: right;
+}
+
+/*主体网站  开始*/
+article .website{
+	border: 1px solid #84d7ba;
+	background-color: #fcfcfc;
+	box-sizing: border-box;
+	padding: 3px 0 3px 23px;
+	overflow: hidden; 
+	position: relative;
+}
+.website ul{
+	overflow: hidden;
+}
+.website ul li{
+	float: left;
+	list-style: none;
+	width: 130px;
+	height: 20px;
+	line-height: 20px;
+	padding: 6px 4px 0 9px;
+}
+.website ul li a:hover{
+	color: #f50;
+	text-decoration: underline;
+}
+.website .web-icon{
+	display: inline-block;
+	width: 17px;
+	height: 16px;
+	background: url(../img/icons2.png) no-repeat;
+	position: relative;
+	top: 2px;
+	margin-right: 6px;
+}
+.website .website-main .baidu{
+	background-position: 0 -200px;
+}
+.website .website-main .sina{
+	background-position: 0 -120px;
+}
+.website .website-main .sohu{
+	background-position: 0 -320px;
+}
+.website .website-main .tencent{
+	background-position: 0 -40px;
+}
+.website .website-main .net{
+	background-position: 0 -160px;
+}
+.website .website-main .youku{
+	background-position: 0 -400px;
+}
+.website .website-main .tmall{
+	background: url(../img/tmall.gif);
+	background-size: 17px 16px;
+}
+.website .website-main .ifeng{
+	background-position: 0 -240px;
+}
+.website .website-main .taobao{
+	background-position: 0 -360px;
+}
+.website .website-main .freegame{
+	background: url(../img/game.png);
+}
+.website .website-main .vhao123{
+	background-position: 0 -640px;
+}
+.website .website-main .jd{
+	background: url(../img/jd.png) no-repeat;
+}
+.website .website-main .auto{
+	background-position: 0 -520px;
+}
+.website .website-main .suning{
+	background: url(../img/suning.png) no-repeat;
+}
+.website .website-main .tejia{
+	background-position: 0 -480px;
+}
+.website .website-main .sport{
+	background: url(../img/pe.png) no-repeat;
+}
+.website .website-main .juhuasuan{
+	background: url(../img/jv.png) no-repeat;
+}
+
+.website .website-second{
+	margin: 14px 0;
+}
+.website .website-second .tongcheng{
+	background: url(../img/58.png) no-repeat;
+}
+.website .website-second .fang{
+	background: url(../img/fang.png) no-repeat;
+}
+.website .website-second .xiecheng{
+	background: url(../img/xiecheng.png) no-repeat;
+}
+.website .website-second .lvmama{
+	background: url(../img/lvmama.png) no-repeat;
+}
+.website .website-second .ganji{
+	background: url(../img/ganji.png) no-repeat;
+}
+.website .website-second .tuniu{
+	background: url(../img/tuniu.png) no-repeat;
+}
+.website .website-second .qunaer{
+	background: url(../img/qunaer.png) no-repeat;
+}
+.website .website-second .suning-phone{
+	background: url(../img/suning.png) no-repeat;
+}
+.website .website-second .lvmama{
+	background: url(../img/lvmama.png) no-repeat;
+}
+.website .website-second .vip{
+	background: url(../img/vip.png) no-repeat;
+}
+.website .website-second .aitaobao{
+	background: url(../img/aitaobao.png) no-repeat;
+}
+
+/*推荐网站  开始*/
+.website .icon-recommend{
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	bottom: 9px;
+	width: 22px;
+	height: 22px;
+	background: url(../img/icon.png) no-repeat -24px -42px;
+	cursor: pointer;
+}
+.website .recommend-tip{
+	display: inline-block;
+	width: 100px;
+	height: 18px;
+	line-height: 18px;
+	position: absolute;
+	left: 18px;
+	bottom: 9px;
+	padding: 1px 0 1px 7px;
+	font-size: 12px;
+	color: #0aa770;
+	background-color: #f9f9f9;
+	border-right: solid 1px #e9e9e9;
+	border-top: solid 1px #e9e9e9;
+	border-bottom: solid 1px #e9e9e9;
+	border-radius: 2px;
+	display: none;
+}
+.website .website-recommend li{
+	height: 34px;
+	line-height: 34px;
+}
+/*推荐网站  结束*/
+/*主体网站  结束*/
+
+/*广告链接  开始*/
+article .adbar{
+	width: 900px;
+}
+.adbar ul{
+	height: 32px;
+	margin-left: 35px;
+}
+.adbar ul li{
+	float: left;
+	list-style: none;
+}
+.adbar ul li a{
+	font-size: 12px;
+	color: #3b5998;
+	margin-right: 20px;
+	display: inline-block;
+	height: 32px;
+	line-height: 32px;
+}
+.adbar ul li a:hover{
+	text-decoration: underline;
+}
+/*广告链接  结束*/
+
+/*猜你喜欢  开始*/
+article .guess-like{
+	width: 898px;
+	background-color: #fcfcfc;
+	border: 1px solid #cecece;
+	position: relative;
+	overflow: hidden;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.guess-like i{
+	display: block;
+	width: 20px;
+	height: 65px;
+	background: url(../img/icon.png) no-repeat;
+	background-position: 0 0;
+	position: absolute;
+	left: 0;
+	top: 42px;
+}
+.guess-like .guess-more{
+	display: block;
+	width: 21px;
+	height: 61px;
+	background: url(../img/icon.png) no-repeat;
+	background-position: 0 -145px;
+	position: absolute;
+	right: -1px;
+	top: 42px;
+}
+.guess-like .guess-more:hover{
+	background-position: -21px -145px;
+}
+.guess-like .guess-ad{
+	width: 27px;
+	height: 16px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background: url(../img/icon.png) no-repeat -82px -21px;
+}
+.guess-like ul{
+	width: 862px;
+	padding: 0 0 0 34px;
+	overflow: hidden;
+}
+.guess-like ul:hover{
+	background-color: #f3f3f3;
+}
+.guess-like ul li{
+	list-style: none;
+	float: left;
+	width: 107px;
+	height: 32px;
+	line-height: 32px;
+}
+.guess-like ul li a{
+	display: inline-block;
+	height: 32px;
+	line-height: 32px;
+	padding-left: 18px;
+	position: relative;
+}
+.guess-like ul li a:hover{
+	color: #f50;
+	text-decoration: underline;
+}
+.guess-like ul li a i{
+	display: inline-block;
+	width: 15px;
+	height: 16px;
+	background: url(../img/re.gif) no-repeat;
+	position: absolute;
+	top: 7px;
+	left: -4px;
+}
+.guess-like ul li.guess-title{
+	width: 40px;
+}
+.guess-like ul li.guess-title a{
+	width: 40px;
+	color: #0aa770;
+	padding-left: 0;
+}
+.guess-like ul li.guess-change{
+	font-size: 12px;
+	width: auto;
+}
+.guess-like ul li.guess-change a{
+	padding-left: 0;
+}
+/*猜你喜欢  结束*/
+/*主体内容区  结束*/
+
+/*主体  结束*/
