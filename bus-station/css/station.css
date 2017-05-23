@@ -1,0 +1,116 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  color: #333;
+  font-size: 12px; }
+
+.wrap {
+  width: 800px;
+  height: 400px;
+  background: #fff;
+  box-shadow: 2px 2px 20px #ccc;
+  margin: 60px auto;
+  padding-top: 20px; }
+
+/*站牌  开始*/
+.board {
+  width: 800px;
+  height: 180px;
+  background: #93dbff;
+  margin-bottom: 20px; }
+
+/*车次信息  开始*/
+.num-meg {
+  float: left;
+  width: 160px;
+  height: 180px;
+  background: #0e3183;
+  color: #fff;
+  text-align: center; }
+
+.num-meg .num {
+  font-size: 40px; }
+.num-meg .bus-meg {
+  margin-bottom: 10px;
+  letter-spacing: 6px; }
+
+/*车次信息  结束*/
+/*站点信息  开始*/
+.stop-name {
+  width: 640px;
+  height: 180px;
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 6px 20px 0 30px;
+  position: relative; }
+
+.s-e-stop {
+  font-size: 24px;
+  color: #fff;
+  text-align: center; }
+
+.stop {
+  display: flex;
+  height: 100px; }
+
+.stop p {
+  flex: 1;
+  width: 12px;
+  height: 100px;
+  float: left;
+  margin: 6px 8px 0 0; }
+
+/*站点信息  结束*/
+/*行车方向  开始*/
+.direction {
+  background: #f39660;
+  color: #fff;
+  width: 640px;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+
+.direction span {
+  display: inline-block;
+  line-height: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -15px;
+  margin-left: -200px; }
+
+.b-a-span, .direction span:before, .direction span:after {
+  display: inline-block;
+  content: '';
+  width: 200px;
+  height: 4px;
+  background: #fff;
+  position: relative;
+  top: -3px; }
+
+.direction span:before {
+  left: -20px; }
+
+.direction span:after {
+  left: 20px; }
+
+.direction .arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-left: 20px solid #fff;
+  position: absolute;
+  right: 67px;
+  top: 5px; }
+
+/*行车方向  结束*/
+/*站牌  结束*/
+
+/*# sourceMappingURL=station.css.map */
