@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>后台管理</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/backstage-manager.css">
+	<script type="text/javascript" src="js/jQuery-3.2.0.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<!--header start-->
+		<header>
+			<div class="container">
+				<div class="header-logo">
+					<div class="logo">logo</div>
+					<div class="unit">
+						<h3>XXX药监管理后台</h3>
+						<p class="text-uppercase">food safety regulation online flatform</p>
+					</div>
+				</div>
+				<div class="function-icon">
+					<a href="#">
+						<img src="img/user1.png">
+						<span>您好，<b>admin</b>，欢迎您登陆</span>
+					</a>
+					<a href="#">
+						<img src="img/help.png">
+						<span>帮助</span>
+					</a>
+					<a href="#">
+						<img src="img/close.png">
+						<span>退出</span>
+					</a>
+				</div>
+
+				<!--屏幕小于1000px时 开始-->
+				<div class="function-icon1">
+					<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+			            <span class="sr-only">Toggle navigation</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			        </button>
+			        <div class="navbar-collapse collapse" role="navigation" aria-expanded="false">
+				        <ul class="nav navbar-nav">
+				            <li><a href="#" target="_blank" onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'v2doc'])">导航菜单</a></li>
+				            <li><a href="#" target="_blank" onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'v3doc'])">企业信息管理</a></li>
+				            <li><a href="#" target="_blank" onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'v4doc'])">食品信息管理</a></li>
+				            <li><a href="#" target="_blank" onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'less'])">企业台账管理</a></li>
+				            <li><a href="#" target="_blank" onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'jquery'])">问题食品处理</a></li>
+				            <li><a href="#" target="_blank" onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'expo'])">数据分析</a></li>
+				            <li><a href="#" target="_blank" onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'expo'])">消息管理</a></li>
+				        </ul>
+				    </div>
+
+					<a href="#" class="user-img">
+						<img src="img/user1.png">
+					</a>
+					<a href="#">
+						<img src="img/help.png">
+					</a>
+					<a href="#">
+						<img src="img/close.png">
+					</a>
+				</div>
+				<!--屏幕小于1000px时 结束-->
+			</div>
+		</header>
+		<!--header end-->
+
+		<!--content start-->
+		<div class="content">
+			<div class="row">
+				<div class="col-md-2 aside">
+					<a class="btn btn-default navi" role="button" data-toggle="collapse" href="#navi" aria-expanded="false" aria-controls="navi">
+  						<span class="span1"></span>
+						导航菜单
+						<i></i>
+					</a>
+					<div class="collapse" id="navi">
+					  	<a href="#">导航子菜单1</a>
+					  	<a href="#">导航子菜单2</a>
+					  	<a href="#">导航子菜单3</a>
+					  	<a href="#">导航子菜单4</a>
+					</div>
+
+					<a class="btn btn-default comp" role="button" data-toggle="collapse" href="#comp" aria-expanded="false" aria-controls="comp">
+  						<span class="span2"></span>
+						企业信息管理
+						<i></i>
+					</a>
+					<div class="collapse" id="comp">
+					  	<a href="#">企管信息1</a>
+					  	<a href="#">企管信息2</a>
+					  	<a href="#">企管信息3</a>
+					  	<a href="#">企管信息4</a>
+					  	<a href="#">企管信息5</a>
+					</div>
+
+					<a class="btn btn-default food" role="button" data-toggle="collapse" href="#food" aria-expanded="false" aria-controls="food">
+  						<span class="span3"></span>
+						食品信息管理
+						<i></i>
+					</a>
+					<div class="collapse" id="food">
+					  	<a href="#">食品信息1</a>
+					  	<a href="#">食品信息2</a>
+					  	<a href="#">食品信息3</a>
+					</div>
+
+					<a class="btn btn-default taizhang" role="button" data-toggle="collapse" href="#taizhang" aria-expanded="false" aria-controls="taizhang">
+  						<span class="span4"></span>
+						企业台账管理
+						<i></i>
+					</a>
+					<div class="collapse" id="taizhang">
+					  	<a href="#">企业进货台账1</a>
+					  	<a href="#">企业进货台账2</a>
+					  	<a href="#">企业进货台账3</a>
+					  	<a href="#">企业进货台账4</a>
+					  	<a href="#">企业进货台账5</a>
+					</div>
+
+					<a class="btn btn-default bad-food" role="button" data-toggle="collapse" href="#bad-food" aria-expanded="false" aria-controls="bad-food">
+  						<span class="span5"></span>
+						问题食品处理
+						<i></i>
+					</a>
+					<div class="collapse" id="bad-food">
+					  	<a href="#">问题食品1</a>
+					  	<a href="#">问题食品2</a>
+					  	<a href="#">问题食品3</a>
+					  	<a href="#">问题食品4</a>
+					</div>
+
+					<a class="btn btn-default data" role="button" data-toggle="collapse" href="#data" aria-expanded="false" aria-controls="data">
+  						<span class="span6"></span>
+						数据分析
+						<i></i>
+					</a>
+					<div class="collapse" id="data">
+					  	<a href="#">数据分析1</a>
+					  	<a href="#">数据分析2</a>
+					  	<a href="#">数据分析3</a>
+					</div>
+
+					<a class="btn btn-default message" role="button" data-toggle="collapse" href="#message" aria-expanded="false" aria-controls="message">
+  						<span class="span7"></span>
+						消息管理
+						<i></i>
+					</a>
+					<div class="collapse" id="message">
+					  	<a href="#">消息1</a>
+					  	<a href="#">消息2</a>
+					  	<a href="#">消息3</a>
+					  	<a href="#">消息4</a>
+					</div>
+				</div>
+				<div class="col-md-10 col-sm-12 col-xs-12 article">
+					<div class="article-content">
+						<!--nav start-->
+						<ul class="nav nav-tabs">
+							<li role="presentation" class="active"><a href="#">系统首页</a></li>
+							<li role="presentation"><a href="#">个人信息</a></li>
+							<li role="presentation"><a href="#">数据分析</a></li>
+						</ul>
+						<!--nav end-->
+
+						<!--data-num start-->
+						<div class="data-num">
+							<div class="row">
+								<div class="col-md-6 col-sm-6 r1">
+									<div class="row">
+										<div class="col-md-12 r2">
+											<div class="row row3">
+												<div class="col-md-4 col-sm-4 col-xs-4 r3">
+													<span class="edit"></span>
+												</div>
+												<div class="col-md-8 col-sm-8 col-xs-8 r4">
+													<div class="num">
+														<a href="#">
+															<h2>150</h2>
+															<p>待编辑文件总量</p>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-12 r2">
+											<div class="row row3">
+												<div class="col-md-4 col-sm-4 col-xs-4 r3">
+													<span class="wait"></span>
+												</div>
+												<div class="col-md-8 col-sm-8 col-xs-8 r4">
+													<div class="num">
+														<a href="#">
+															<h2>30000</h2>
+															<p>待审核文件总量</p>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6 r1">
+									<div class="row">
+										<div class="col-md-12 r2">
+											<div class="row row3">
+												<div class="col-md-4 col-sm-4 col-xs-4 r3">
+													<span class="send"></span>
+												</div>
+												<div class="col-md-8 col-sm-8 col-xs-8 r4">
+													<div class="num">
+														<a href="#">
+															<h2>3000</h2>
+															<p>已发布文件总量</p>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-12 r2">
+											<div class="row row3">
+												<div class="col-md-4 col-sm-4 col-xs-4 r3">
+													<span class="non"></span>
+												</div>
+												<div class="col-md-8 col-sm-8 col-xs-8 r4">
+													<div class="num">
+														<a href="#">
+															<h2>150</h2>
+															<p>待审核不通过文件总量</p>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--data-num end-->
+
+						<!--send start-->
+						<div class="send-num">
+							<div class="panel panel-primary">
+								<div class="panel-heading">
+									<span></span>
+									<a href="#">我的发布</a>
+								</div>
+								<table class="table table-hover">
+							    	<tr class="th">
+							    		<th>政府部门</th>
+							    		<th>发布总量</th>
+							    		<th>编辑数量</th>
+							    		<th>待审核数量</th>
+							    		<th>待审核不通过量</th>
+							    	</tr>
+							    	<tr>
+							    		<td>食品生产监管处</td>
+							    		<td>2000</td>
+							    		<td>500</td>
+							    		<td>1000</td>
+							    		<td>500</td>
+							    	</tr>
+							    	<tr>
+							    		<td>食品生产监管处</td>
+							    		<td>2000</td>
+							    		<td>500</td>
+							    		<td>1000</td>
+							    		<td>500</td>
+							    	</tr>
+							    	<tr>
+							    		<td>食品生产监管处</td>
+							    		<td>2000</td>
+							    		<td>500</td>
+							    		<td>1000</td>
+							    		<td>500</td>
+							    	</tr>
+								</table>
+							</div>
+						</div>
+						<!--send end-->
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--content end-->
+
+		<!--footer start-->
+		<footer>
+			<div class="container">
+				<p>&copy; 2017XXX药监 v5.0 build 1002</p>
+			</div>
+		</footer>
+		<!--footer end-->
+	</div>
+
+	
+	
+	
+</body>
+</html>

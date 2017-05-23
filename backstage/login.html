@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>非凡学院，请登录</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+	<div class="warpper">
+		<!--header start-->
+		<header>
+			<nav>
+				<div class="container">
+					<ul>
+						<li><a href="#">首页</a></li>
+						<li><a href="#">学院介绍</a></li>
+						<li><a href="#">企业培训</a></li>
+						<li><a href="#">学员作品</a></li>
+						<li><a href="#">教学团队</a></li>
+						<li><a href="#">学历考证</a></li>
+						<li><a href="#">学习园地</a></li>
+						<li><a href="#">入学须知</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="logo">
+				<div class="container">
+					<img src="img/logo.png">
+					<a href="#" class="register">
+						<span>新用户注册</span>
+					</a>
+				</div>
+			</div>
+		</header>
+		<!--header end-->
+		
+		<!--main start-->
+		<div class="main">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7 col-sm-6 col-xs-4"></div>
+					<div class="col-md-5 col-sm-6 col-xs-8 pannel">
+						<h3>登录</h3>
+						<form action="backstage-manager.html" method="post">
+							<div class="form-group">
+								<label class="sr-only" for="user">username</label>
+								<div class="input-group">
+									<span class="input-group-addon" id="user-icon"><img src="img/user.png"></span>
+									<input type="text" class="form-control" id="user" placeholder="用户名/手机"  aria-describedby="user-icon">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="sr-only" for="psw">Password</label>
+								<div class="input-group">
+									<span class="input-group-addon" id="psw-icon"><img src="img/password.png"></span>
+									<input type="password" class="form-control" id="psw" placeholder="密码"  aria-describedby="psw-icon">
+								</div>
+							</div>
+							<button type="submit" class="btn btn-danger btn-block">登&nbsp;录</button>
+						</form>
+						<form class="form-inline form2">
+							<div class="checkbox">
+								<label>
+								<input type="checkbox"> 自动登录
+								</label>
+							</div>
+						</form>
+						<a href="">
+							<span>忘记密码？</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--main end-->
+
+		<!--footer start-->
+		<footer>
+			<div class="container">
+				<p>非凡学院 版权所有&nbsp;&copy; All Rights Reserved</p>
+			</div>
+		</footer>
+		<!--footer end-->
+
+	</div>
+</body>
+</html>
