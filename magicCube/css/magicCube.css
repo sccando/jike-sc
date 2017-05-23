@@ -1,0 +1,113 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+h1{
+	text-align: center;
+	margin-top: 60px;
+	color: #333;
+}
+.cube{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -125px;
+	margin-top: -125px;
+}
+.box{
+	width: 250px;
+	height: 250px;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-webkit-transform-origin: 125px 125px 0;
+	-moz-transform-origin: 125px 125px 0;
+	-webkit-animation: action cubic-bezier(.45,1.03,.76,.23) infinite 3s;
+}
+
+@-webkit-keyframes action{
+	20%{-webkit-transform: rotateX(90deg);}
+	40%{-webkit-transform: rotateX(90deg) rotateZ(125deg);}
+	60%{-webkit-transform: rotateY(125deg) rotateZ(180deg);}
+	80%{-webkit-transform: rotateY(125deg) rotateZ(90deg);}
+}
+
+@-moz-keyframes action{
+	20%{-moz-transform: rotateX(90deg);}
+	40%{-moz-transform: rotateX(90deg) rotateZ(125deg);}
+	60%{-moz-transform: rotateY(125deg) rotateZ(180deg);}
+	80%{-moz-transform: rotateY(125deg) rotateZ(90deg);}
+}
+
+.face{
+	position: absolute;
+}
+
+/*front*/
+.face1{
+	-webkit-transform: translateZ(125px);
+	-moz-transform: translateZ(125px);
+}
+/*front*/
+
+/*right-side*/
+.face2{
+	-webkit-transform: rotateY(90deg) translateZ(125px);
+	-moz-transform: rotateY(90deg) translateZ(125px);
+}
+/*right-side*/
+
+/*left-side*/
+.face3{
+	-webkit-transform: rotateY(-90deg) translateZ(125px);
+	-moz-transform: rotateY(-90deg) translateZ(125px);
+}
+/*left-side*/
+
+/*below*/
+.face4{
+	-webkit-transform: rotateX(-90deg) translateZ(125px);
+	-moz-transform: rotateX(-90deg) translateZ(125px);
+}
+/*below*/
+
+/*above*/
+.face5{
+	-webkit-transform: rotateX(90deg) translateZ(125px);
+	-moz-transform: rotateX(90deg) translateZ(125px);
+}
+/*above*/
+
+/*back*/
+.face6{
+	-webkit-transform: translateZ(-125px);
+	-moz-transform: translateZ(-125px);
+}
+/*back*/
+
+/*inner-block start*/
+.block{
+	float: left;
+	width: 80px;
+	height: 80px;
+	margin: 0 3px 3px 0;
+	border-radius: 20px;
+}
+.b1{
+	background-color: #f00;
+}
+.b2{
+	background-color: #00f;
+}
+.b3{
+	background-color: #ff0;
+}
+.b4{
+	background-color: #0f0;
+}
+.b5{
+	background-color: orange;
+}
+.b6{
+	background-color: brown;
+}
+/*inner-block end*/
